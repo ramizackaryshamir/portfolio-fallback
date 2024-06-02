@@ -10,9 +10,7 @@ const Project = ({
   descriptionByline,
   descriptionFeature1,
   descriptionFeature2,
-  descriptionFeature3,
-  codeSRC,
-  projectSRC,
+  descriptionFeature3, s
 }) => {
   return (
     <>
@@ -23,15 +21,10 @@ const Project = ({
           <p className="project-description-byline">{descriptionByline}</p>
           <span className="features-heading">Project highlights:</span>
           <ul>
-            <li>{descriptionFeature1}</li>
-            <li>{descriptionFeature2}</li>
-            <li>{descriptionFeature3}</li>
+            {descriptionFeature1 ? <li>{descriptionFeature1}</li> : null}
+            {descriptionFeature2 ? <li>{descriptionFeature2}</li> : null}
+            {descriptionFeature3 ? <li>{descriptionFeature3}</li> : null}
           </ul>
-          <div className="external-links">
-            <a href={codeSRC}>View Code</a>
-            ||
-            <a href={projectSRC}>View Project</a>
-          </div>
         </div>
         <motion.div
           animate={{ opacity: 1 }}

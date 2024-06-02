@@ -16,26 +16,26 @@ export default function Home() {
           <Project
             src={DFS}
             title="Discover Financial Services"
-            description="Stack: ReactJS with TypeScript || NodeJS Express with Nginx || GitHub Actions || React Testing Library + Jest || JestAxe + Lighthouse CI CLI + Pa11y CLI"
-            descriptionByline="Mobile Application Regression Pieline Portal"
-            descriptionFeature1=""
-            descriptionFeature2=""
-            descriptionFeature3=""
+            description="Mobile Application Regression Pieline Portal"
+            descriptionByline="ReactJS with TypeScript + ReactNative with TypeScript|| NodeJS Express with Nginx || GitHub Actions || React Testing Library + Jest + Appium || JestAxe + Lighthouse CI CLI + Pa11y CLI"
+
+            descriptionFeature1="Optimized performance across all Core Web Vitals, improving page load by 75%, page responsiveness by 43%, and visual stability by 61%."
+            descriptionFeature2="Developed features for and maintained mobile regression pipeline portal using modern ReactJS design patterns to service 15 teams of React Native mobile application developers."
+            descriptionFeature3="Designed performant and sturdy test suites using React Testing Library, Jest, and Appium to increase overall test coverage by 65%."
           />
           <Project
             src={JNJ}
-            title="RJohnson and Johnson"
-            description="World Clock Widget"
-            descriptionByline="Current time for over 200 countries"
-            descriptionFeature1="Handle and manipulate API data to render custom clean, client-friendly UI."
-            descriptionFeature2="Consistent, dynamic styling of React Components using the styled-components library."
-            descriptionFeature3="Set local time for client and display the current time for more than 200 countries in a sleek, minimalist-inspired throwback to the digital alarm clock."
+            title="Johnson and Johnson"
+            description="Johnson and Johnson Vision website"
+            descriptionByline="Stack:"
+            descriptionFeature1="Piloted B2B Customer Loyalty website using NextJS, TailwindCSS, React, and Redux to manage Johnson and Johnson Vision’s alliance of global GPOs."
+            descriptionFeature2="Consulted in all aspects of SDLC and lead team of 4 developers in redesign of Johnson and Johnson Vision’s customer-facing site."
           />
           <Project
             src={CC92MB}
             title="Coca Cola"
-            description="Vanilla JavaScript News Widget"
-            descriptionByline="Up-to-the-minute stories from the New York Times"
+            description="Coca Cola ReactJS and React Native component libraries"
+            descriptionByline="Stack:"
             descriptionFeature1="No libraries. No modules. No frameworks. 100% vanilla JavaScript/HTML/CSS NYT news widget."
             descriptionFeature2="Utilizes New York Times 'Times Wire API' to retrieve up-to-the-minute stream of nytimes articles."
             descriptionFeature3="Implementation of CSS Grid and CSS Flexbox."
@@ -43,8 +43,8 @@ export default function Home() {
           <Project
             src={NA}
             title="New Alternatives"
-            description="MERN Stack Front to Back"
-            descriptionByline="Revamp of website for NYC non-profit"
+            description=""
+            descriptionByline="Stack: ReactJS "
             descriptionFeature1="Worked with a design team to translate wire-frames into a scalable high fidelity, front-end architecture."
             descriptionFeature2="Optimized the delivery of code assets to browsers across a wide spectrum of devices."
             descriptionFeature3="Seamless integration of MongoDB, Express, React, and Node.js to implement full CRUD functionality."
@@ -53,7 +53,7 @@ export default function Home() {
             src={SAMSHA}
             title="NYT News Widget"
             description="Vanilla JavaScript News Widget"
-            descriptionByline="Up-to-the-minute stories from the New York Times"
+            descriptionByline="Stack:"
             descriptionFeature1="No libraries. No modules. No frameworks. 100% vanilla JavaScript/HTML/CSS NYT news widget."
             descriptionFeature2="Utilizes New York Times 'Times Wire API' to retrieve up-to-the-minute stream of nytimes articles."
             descriptionFeature3="Implementation of CSS Grid and CSS Flexbox."
@@ -62,7 +62,7 @@ export default function Home() {
             src={TABOOLA}
             title="Taboola"
             description="MERN Stack Front to Back"
-            descriptionByline="Revamp of website for NYC non-profit"
+            descriptionByline="Stack:"
             descriptionFeature1="Worked with a design team to translate wire-frames into a scalable high fidelity, front-end architecture."
             descriptionFeature2="Optimized the delivery of code assets to browsers across a wide spectrum of devices."
             descriptionFeature3="Seamless integration of MongoDB, Express, React, and Node.js to implement full CRUD functionality."

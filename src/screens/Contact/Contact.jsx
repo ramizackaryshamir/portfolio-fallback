@@ -9,7 +9,7 @@ const Contact = () => {
   return (
     <>
       <Layout>
-        <section className="about-container">
+        <section className="contact-container">
           <a href="mailto:rzshamir@icloud.com">
             <img
               className="social"
@@ -24,11 +24,11 @@ const Contact = () => {
               alt="LinkedIn: in/ramizackaryshamir"
             />
           </a>
-          <a href="https://github.com/MeetYourCreator">
+          <a href="https://github.com/ramizackaryshamir/">
             <img
               className="social"
               src={GitHub}
-              alt="GitHub: MeetYourCreator"
+              alt="GitHub: ramizackaryshamir"
             />
           </a>
         </section>
