@@ -1,7 +1,7 @@
 import React from "react";
 import {
+  Routes,
   Route,
-  Switch,
 } from "react-router";
 import "./App.js";
 import Home from "./screens/Home/Home.jsx";
@@ -11,14 +11,10 @@ function App() {
 
   return (
     <>
-      <Switch>
-        <Route path="/contact">
-          <Contact />
-        </Route>
-        <Route path="/">
-          <Project />
-        </Route>
-      </Switch>
+      <Routes>
+        <Route path="/contact" component={Contact} />
+        <Route path="/" component={Home} />
+      </Routes>
     </>
   );
 }
