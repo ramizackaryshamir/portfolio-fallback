@@ -1,12 +1,12 @@
 import React from "react";
 import Layout from "../../components/shared/Layout/Layout.jsx";
 import Project from "../../components/Project/Project.jsx";
-import DFS from '../../assets/dfs-mrp.mp4';
-import JNJ from '../../assets/jnjvision.mp4';
-import CC92MB from '../../assets/coca-cola_92mb.mp4';
-import NA from '../../assets/new-alternatives.mp4';
-import SAMSHA from '../../assets/samsha.mp4';
-import TABOOLA from '../../assets/taboola.mp4';
+import DFS from '../../assets/videos/dfs-mrp.mp4';
+import JNJ from '../../assets/videos/jnjvision.mp4';
+import CC92MB from '../../assets/videos/coca-cola_92mb.mp4';
+import NA from '../../assets/videos/new-alternatives.mp4';
+import SAMSHA from '../../assets/videos/samsha.mp4';
+import TABOOLA from '../../assets/videos/taboola.mp4';
 
 export default function Home() {
   return (

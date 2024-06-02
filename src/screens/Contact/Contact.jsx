@@ -1,7 +1,7 @@
 import React from "react";
-import Email from "../../Assets/email-logo.png";
-import LinkedIn from "../../Assets/LinkedIn-icon.png";
-import GitHub from "../../Assets/github-logo.png";
+import Email from "../../assets/images/email-logo.png";
+import LinkedIn from "../../assets/images/linkedIn-logo.png";
+import GitHub from "../../assets/images/github-logo.png";
 import Layout from "../../components/shared/Layout/Layout.jsx";
 import "./Contact.css";
 
