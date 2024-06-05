@@ -7,6 +7,7 @@ import CC92MB from '../../assets/videos/coca-cola_92mb.mp4';
 import NA from '../../assets/videos/new-alternatives.mp4';
 import SAMSHA from '../../assets/videos/samsha.mp4';
 import TABOOLA from '../../assets/videos/taboola.mp4';
+import './styles.css';
 
 export default function Home() {
   return (

@@ -16,10 +16,16 @@ const Project = ({
     <>
       <section className="project-container">
         <div className="project-info">
-          <h1 className="project-title">{title}</h1>
-          <p className="project-description">{description}</p>
-          <p className="project-description-byline">{descriptionByline}</p>
-          <span className="features-heading">Project highlights:</span>
+          <h1 className="project-title">{title}
+          </h1>
+          <ul>
+            <li className="project-description">{description}
+            </li>
+            <li className="tech-stack">{descriptionByline}
+            </li>
+          </ul>
+          <h2 className="project-highlights">Project highlights:
+          </h2>
           <ul>
             {descriptionFeature1 ? <li>{descriptionFeature1}</li> : null}
             {descriptionFeature2 ? <li>{descriptionFeature2}</li> : null}

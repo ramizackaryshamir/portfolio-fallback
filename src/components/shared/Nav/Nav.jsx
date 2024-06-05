@@ -1,49 +1,39 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
-import useStyles from "./Nav.js";
+// import { motion } from "framer-motion";
+import './styles.css';
 
 export default function Nav() {
-  const classes = useStyles();
 
   return (
-    <ul className={classes.navContainer}>
-      <span className={classes.leftNav}>
-        {/* <motion.li
+    <ul className='navContainer'>
+
+
+      {/* <motion.li
           whileHover={{
-            scale: 1.8,
+            scale: 2,
             textShadow: "0px 0px 8px rgb(255, 162, 190)",
-            type: "tween",
           }}
         > */}
-
-        Rami Zackary Shamir
-
-        {/* </motion.li> */}
-      </span>
-      <span className={classes.rightNav}>
-
-        <motion.li
+      <li>
+        <Link to="/" className='navLink'>
+          Projects
+        </Link>
+      </li>
+      {/* </motion.li> */}
+      {/* <motion.li
           whileHover={{
             scale: 2,
             textShadow: "0px 0px 8px rgb(255, 162, 190)",
           }}
-        >
-          <Link to="/" className={classes.navLink}>
-            Projects
-          </Link>
-        </motion.li>
-        <motion.li
-          whileHover={{
-            scale: 2,
-            textShadow: "0px 0px 8px rgb(255, 162, 190)",
-          }}
-        >
-          <Link to="/contact" className={classes.navLink}>
-            Contact
-          </Link>
-        </motion.li>
-      </span>
+        > */}
+      <li>
+        <Link to="/contact" className='navLink'>
+          Contact
+        </Link>
+      </li>
+      {/* </motion.li> */}
+
     </ul>
   );
 }

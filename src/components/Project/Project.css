@@ -1,16 +1,11 @@
 .project-container {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: space-evenly;
   color: #ffffff;
-  font-size: 15px;
-  width: 100%;
 }
 
 .project-info {
-  display: flex;
-  flex-direction: column;
   padding-left: 40px;
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
@@ -18,29 +13,31 @@
 }
 
 .project-title {
-font-variant: small-caps;
+  font-size: 20px;
+  font-variant: small-caps;
 }
 
 .project-description {
-  font-size: 30px;
+  margin-top: -10px;
+  list-style-type: none;
+  font-size: 25px;
   font-weight: 300;
   color: rgb(255, 162, 190);
-  margin-top: -20px;
   font-family: "Montserrat", sans-serif;
 }
 
-.features-heading {
+.tech-stack {
+   margin-bottom: 34px;
+  list-style-type: none;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+}
+
+.project-highlights{
   font-size: 15px;
   letter-spacing: 1px;
   font-weight: 300;
-}
-
-.project-description-byline {
-  font-size: 20px;
-  font-weight: 400;
-  margin-top: -25px;
-  margin-bottom: 34px;
-  font-family: "Montserrat", sans-serif;
 }
 
 .project-video {
@@ -120,7 +117,7 @@ a {
     font-family: "Montserrat", sans-serif;
   }
 
-.project-description-byline {
+.tech-stack {
     font-size: 13px;
     font-weight: 500;
     margin-top: -5px;
@@ -128,7 +125,7 @@ a {
     font-family: "Montserrat", sans-serif;
   }
 
-  .features-heading {
+  .project-highlights{
     font-size: 15px;
     letter-spacing: 1px;
   }

@@ -1,14 +1,14 @@
-import React from "react"
-import useStyles from "./Footer.js"
+import React from "react";
+import '././styles.css';
 
 export default function Footer() {
-  const classes = useStyles()
+
 
   return (
     <>
-      <footer className={classes.footer}>
+      <footer className="footer">
         <h1>Footer</h1>
       </footer>
     </>
-  )
+  );
 }
