@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import './styles.css';
+import '../../../style.css';
 import Header from "../Header/Header.jsx";
 
 export default function Layout({ children }) {
