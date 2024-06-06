@@ -7,7 +7,6 @@ const Video = ({ src }) => {
         style={ {
           objectFit: 'cover',
           width: '100vw',
-          // width: 'object-fit'
         }}
         autoPlay={true}
         muted={true}

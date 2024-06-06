@@ -30,9 +30,7 @@ export default function Layout({ children }) {
           <Header />
         </motion.div>
       </header>
-      <section
-      // className='layoutChildren'
-      >
+      <section>
         {children}
       </section>
     </main>

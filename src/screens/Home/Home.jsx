@@ -29,7 +29,7 @@ export default function Home() {
           src={DFS}
           title="Discover Financial Services"
           description="Mobile Application Regression Pieline Portal"
-          descriptionByline="ReactJS with TypeScript + ReactNative with TypeScript|| NodeJS Express with Nginx || GitHub Actions || React Testing Library + Jest + Appium || JestAxe + Lighthouse CI CLI + Pa11y CLI"
+          descriptionByline="ReactJS with TypeScript + React Native with TypeScript || NodeJS Express with Nginx || GitHub Actions || React Testing Library + Jest + Appium || JestAxe + Lighthouse CI CLI + Pa11y CLI"
 
           descriptionFeature1="Optimized performance across all Core Web Vitals, improving page load by 75%, page responsiveness by 43%, and visual stability by 61%."
           descriptionFeature2="Developed features for and maintained mobile regression pipeline portal using modern ReactJS design patterns to service 15 teams of React Native mobile application developers."

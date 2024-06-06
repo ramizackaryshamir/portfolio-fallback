@@ -23,25 +23,67 @@ const Project = ({
           backgroundColor: '#000000'
         }}
       >
-        <div>
-          <h1>
+        <div
+         style={ {
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'flex-start',
+            listStyleType: 'none',
+          paddingTop: '10px'
+        }}
+        >
+          <h1
+          style={ {
+          display: 'flex',
+          flexDirection: 'column',
+          listStyleType: 'none',
+        }}
+          >
             { title }
           </h1>
-          <ul>
-            <li>
+          <ul
+            style={ {
+            paddingLeft: '15px',
+              listStyleType: 'none',
+             lineHeight: '1.6',
+        }}
+          >
+            <li
+                  style={ {
+             lineHeight: '1.6',
+        }}
+            >
               { description }
             </li>
-            <li>
+            <li
+            >
               { descriptionByline }
             </li>
           </ul>
           <h2>
             Project highlights:
           </h2>
-          <ul>
-            {descriptionFeature1 ? <li>{descriptionFeature1}</li> : null}
-            {descriptionFeature2 ? <li>{descriptionFeature2}</li> : null}
-            {descriptionFeature3 ? <li>{descriptionFeature3}</li> : null}
+          <ul
+           style={ {
+            paddingLeft: '30px',
+            color: '#ffffff'
+        }}
+          >
+            { descriptionFeature1 ? <li
+              style={ {
+                lineHeight: '1.6',
+              } }
+            >{ descriptionFeature1 }</li> : null }
+            {descriptionFeature2 ? <li
+              style={ {
+                lineHeight: '1.6',
+              } }>
+              { descriptionFeature2 }</li> : null }
+            { descriptionFeature3 ? <li
+             style={ {
+                lineHeight: '1.6',
+              } }
+            >{ descriptionFeature3 }</li> : null }
           </ul>
         </div>
         <motion.div
