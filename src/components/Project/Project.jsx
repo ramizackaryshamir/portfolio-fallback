@@ -14,8 +14,12 @@ const Project = ({
   return (
     <>
       <section
-        style={{
+        style={ {
+          display: 'flex',
+          flexDirection: 'column',
+          justifyContent: "space-between",
           height: '100vh',
+          paddingBottom: '90px',
           scrollSnapAlign: 'start',
           backgroundColor: '#000000'
         }}

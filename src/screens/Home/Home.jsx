@@ -36,7 +36,7 @@ export default function Home() {
           descriptionFeature3="Designed performant and sturdy test suites using React Testing Library, Jest, and Appium to increase overall test coverage by 65%."
         />
         <Project
-          // src={JNJ}
+          src={JNJ}
           title="Johnson and Johnson"
           description="Johnson and Johnson Vision website"
           descriptionByline="Stack:"
@@ -53,7 +53,7 @@ export default function Home() {
           descriptionFeature3="Implementation of CSS Grid and CSS Flexbox."
         />
         <Project
-          // src={NA}
+          src={NA}
           title="New Alternatives"
           description=""
           descriptionByline="Stack: ReactJS "
@@ -62,7 +62,7 @@ export default function Home() {
           descriptionFeature3="Seamless integration of MongoDB, Express, React, and Node.js to implement full CRUD functionality."
         />
         <Project
-          // src={SAMSHA}
+          src={SAMSHA}
           title="NYT News Widget"
           description="Vanilla JavaScript News Widget"
           descriptionByline="Stack:"
@@ -71,7 +71,7 @@ export default function Home() {
           descriptionFeature3="Implementation of CSS Grid and CSS Flexbox."
         />
         <Project
-          // src={TABOOLA}
+          src={TABOOLA}
           title="Taboola"
           description="MERN Stack Front to Back"
           descriptionByline="Stack:"
