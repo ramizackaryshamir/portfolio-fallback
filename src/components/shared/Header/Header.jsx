@@ -1,5 +1,4 @@
 import React from "react";
-import '../../../style.css';
 import Nav from "../Nav/Nav.jsx";
 
 export default function Header() {

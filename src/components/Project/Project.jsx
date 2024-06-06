@@ -1,6 +1,5 @@
 import React from "react";
 import { motion } from "framer-motion";
-import '../../style.css';
 import Video from "../Video/Video.jsx";
 
 const Project = ({
@@ -14,17 +13,23 @@ const Project = ({
 }) => {
   return (
     <>
-      <section className="project-container">
-        <div className="project-info">
-          <h1 className="project-title">{title}
+      <section
+        style={{
+          height: '100vh',
+          scrollSnapAlign: 'start',
+          backgroundColor: '#000000'
+        }}
+      >
+        <div >
+          <h1 >{title}
           </h1>
           <ul>
-            <li className="project-description">{description}
+            <li >{description}
             </li>
-            <li className="tech-stack">{descriptionByline}
+            <li >{descriptionByline}
             </li>
           </ul>
-          <h2 className="project-highlights">Project highlights:
+          <h2 >Project highlights:
           </h2>
           <ul>
             {descriptionFeature1 ? <li>{descriptionFeature1}</li> : null}
@@ -39,7 +44,6 @@ const Project = ({
             delay: 1,
             duration: 3,
           }}
-          className="project-video"
         >
           <Video src={src} />
         </motion.div>

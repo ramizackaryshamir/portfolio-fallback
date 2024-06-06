@@ -1,13 +1,12 @@
 import React from "react";
 import { motion } from "framer-motion";
-import '../../../style.css';
 import Header from "../Header/Header.jsx";
 
 export default function Layout({ children }) {
 
 
   return (
-    <main className='layout'>
+    <main >
       <header className='header'>
         <motion.div
 
