@@ -17,9 +17,8 @@ const Project = ({
         style={ {
           display: 'flex',
           flexDirection: 'column',
-          justifyContent: "space-between",
+          justifyContent: "space-around",
           height: '100vh',
-          paddingBottom: '90px',
           scrollSnapAlign: 'start',
           backgroundColor: '#000000'
         }}
@@ -54,6 +53,7 @@ const Project = ({
           }}
         >
           <Video
+
             src={ src }
           />
         </motion.div>

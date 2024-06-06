@@ -12,7 +12,7 @@ import TABOOLA from '../../assets/videos/taboola.mp4';
 export default function Home() {
   return (
     <>
-      {/* <Layout> */}
+      <Layout>
       <div
         style={{
           display: 'flex',
@@ -80,7 +80,7 @@ export default function Home() {
           descriptionFeature3="Seamless integration of MongoDB, Express, React, and Node.js to implement full CRUD functionality."
         />
       </div>
-      {/* </Layout> */}
+      </Layout>
     </>
   );
 }

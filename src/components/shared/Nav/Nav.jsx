@@ -5,9 +5,14 @@ import { Link } from "react-router-dom";
 export default function Nav() {
 
   return (
-    <ul className='navContainer'>
+    <ul
+      style={ {
+        display: 'flex',
+        flexDirection: 'row',
+        listStyleType: 'none',
 
-
+    }}
+    >
       {/* <motion.li
           whileHover={{
             scale: 2,
@@ -15,7 +20,13 @@ export default function Nav() {
           }}
         > */}
       <li>
-        <Link to="/" className='navLink'>
+        <Link
+          to="/"
+          style={ {
+            textDecoration: 'none',
+            color: 'black'
+          }}
+        >
           Projects
         </Link>
       </li>
@@ -27,7 +38,13 @@ export default function Nav() {
           }}
         > */}
       <li>
-        <Link to="/contact" className='navLink'>
+        <Link
+          to="/contact"
+           style={ {
+            textDecoration: 'none',
+            color: 'black'
+          }}
+        >
           Contact
         </Link>
       </li>

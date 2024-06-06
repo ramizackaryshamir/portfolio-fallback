@@ -6,7 +6,7 @@ const Video = ({ src }) => {
       <video
         style={ {
           objectFit: 'cover',
-          width: '100vw'
+          width: '100vw',
           // width: 'object-fit'
         }}
         autoPlay={true}

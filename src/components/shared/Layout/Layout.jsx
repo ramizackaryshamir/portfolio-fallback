@@ -6,10 +6,20 @@ export default function Layout({ children }) {
 
 
   return (
-    <main >
-      <header className='header'>
+    <main>
+      <header
+        style={ {
+           display: 'flex',
+           flexDirection: 'column',
+           position: 'sticky',
+           top: 0,
+           width: '100vw',
+           backgroundColor: 'white',
+           overflowX: 'hidden',
+           overflowY: 'auto',
+      }}
+      >
         <motion.div
-
           animate={{ opacity: 1 }}
           initial={{ opacity: 0 }}
           transition={{
