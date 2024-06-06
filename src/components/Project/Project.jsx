@@ -20,16 +20,20 @@ const Project = ({
           backgroundColor: '#000000'
         }}
       >
-        <div >
-          <h1 >{title}
+        <div>
+          <h1>
+            { title }
           </h1>
           <ul>
-            <li >{description}
+            <li>
+              { description }
             </li>
-            <li >{descriptionByline}
+            <li>
+              { descriptionByline }
             </li>
           </ul>
-          <h2 >Project highlights:
+          <h2>
+            Project highlights:
           </h2>
           <ul>
             {descriptionFeature1 ? <li>{descriptionFeature1}</li> : null}
@@ -45,7 +49,9 @@ const Project = ({
             duration: 3,
           }}
         >
-          <Video src={src} />
+          <Video
+            src={ src }
+          />
         </motion.div>
       </section>
     </>

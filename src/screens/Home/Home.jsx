@@ -17,6 +17,8 @@ export default function Home() {
         style={{
           display: 'flex',
           flexDirection: 'column',
+          justifyContent: 'center',
+          alignItems: 'center',
           width: '100vw',
           gap: '10px',
           scrollSnapType: 'both mandatory',
@@ -24,7 +26,7 @@ export default function Home() {
         }}
       >
         <Project
-          // src={DFS}
+          src={DFS}
           title="Discover Financial Services"
           description="Mobile Application Regression Pieline Portal"
           descriptionByline="ReactJS with TypeScript + ReactNative with TypeScript|| NodeJS Express with Nginx || GitHub Actions || React Testing Library + Jest + Appium || JestAxe + Lighthouse CI CLI + Pa11y CLI"
@@ -42,7 +44,7 @@ export default function Home() {
           descriptionFeature2="Consulted in all aspects of SDLC and lead team of 4 developers in redesign of Johnson and Johnson Vision’s customer-facing site."
         />
         <Project
-          // src={CC92MB}
+          src={CC92MB}
           title="Coca Cola"
           description="Coca Cola ReactJS and React Native component libraries"
           descriptionByline="Stack:"
