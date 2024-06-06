@@ -9,8 +9,9 @@ export default function Nav() {
       style={ {
         display: 'flex',
         flexDirection: 'row',
+        justifyContent: 'space-around',
+        width: '150px',
         listStyleType: 'none',
-
     }}
     >
       {/* <motion.li

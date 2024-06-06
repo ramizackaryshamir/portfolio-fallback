@@ -8,11 +8,10 @@ export default function Header() {
       <header
           style={ {
             display: 'flex',
-          flexDirection: 'row',
-          justifyContent: "space-between",
+            flexDirection: 'row',
+            justifyContent: "space-between",
             alignItems: 'center',
-          height: '30px',
-
+            height: '30px',
           }}
       >
         <article
