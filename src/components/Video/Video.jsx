@@ -1,5 +1,5 @@
 import React from "react";
-import "./Video.css";
+import '../../style.css';
 
 const Video = ({ src }) => {
   return (

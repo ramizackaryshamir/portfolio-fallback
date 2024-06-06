@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import "./Project.css";
+import '../../style.css';
 import Video from "../Video/Video.jsx";
 
 const Project = ({
