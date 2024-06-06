@@ -91,10 +91,20 @@
 .project-video {
   display: flex;
   flex-direction: column;
-  width: 900px;
+  width: 100%;
+  max-width: 100%;
   object-fit: cover;
   z-index: 1;
   margin: -120px auto -120px auto;
+}
+
+.video {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  height: 900px;
+  overflow: hidden;
 }
 
 .external-links {
@@ -130,6 +140,7 @@ a {
   font-weight: 500;
   letter-spacing: 1px;
 }
+
 .video {
   display: flex;
   flex-direction: column;

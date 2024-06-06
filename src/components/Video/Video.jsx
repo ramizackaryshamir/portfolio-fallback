@@ -4,7 +4,9 @@ import '../../style.css';
 const Video = ({ src }) => {
   return (
     <>
-      <section className="video">
+      <section
+        className="video"
+      >
         <video autoPlay={true} muted={true} loop={true} playsInline={true}>
           <source src={src} type="video/mp4" />
         </video>
