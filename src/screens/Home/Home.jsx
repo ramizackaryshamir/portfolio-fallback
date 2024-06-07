@@ -25,12 +25,13 @@ export default function Home() {
         style={{
           display: 'flex',
           flexDirection: 'column',
-          justifyContent: 'center',
+          // justifyContent: 'center',
           alignItems: 'center',
           width: '100vw',
           gap: '10px',
           scrollSnapType: 'both mandatory',
-          backgroundColor: '#ffffff',
+            backgroundColor: 'yellow',
+          border: '10px solid red'
         }}
       >
         <Project

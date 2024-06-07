@@ -23,18 +23,17 @@ const Project = ({
         style={ {
           display: 'flex',
           flexDirection: 'column',
-          justifyContent: "space-around",
+          alignItems: 'center',
           height: '100vh',
+          width: '90vw',
           scrollSnapAlign: 'start',
-          backgroundColor: '#000000'
+          backgroundColor: 'orange',
+          border: '5px solid black'
+          // backgroundColor: '#000000'
         }}
       >
         <div
-
          style={ {
-          display: 'flex',
-          flexDirection: 'column',
-          alignItems: 'flex-start',
           listStyleType: 'none',
           paddingTop: '10px'
         }}
@@ -42,25 +41,35 @@ const Project = ({
           <h1
           className='copperplate'
           style={ {
-          display: 'flex',
-          flexDirection: 'column',
-          listStyleType: 'none',
+            listStyleType: 'none',
+            backgroundColor: 'green',
+
         }}
           >
             { title }
           </h1>
           <section
             style={ {
-            paddingLeft: '15px',
+              // paddingLeft: '15px',
+              backgroundColor: 'pink',
+
         }}
           >
             <p
               className='futura'
+               style={ {
+
+              backgroundColor: 'gold'
+        }}
             >
               { description }
             </p>
             <p
-             className='futura'
+              className='futura'
+              style={ {
+
+              backgroundColor: 'blue'
+        }}
             >
               { techStack }
             </p>
@@ -70,31 +79,6 @@ const Project = ({
           >
             Project highlights include {feature1} {feature2} {feature3 ? feature3 : null}
           </section>
-          {/* <h2>
-            Project highlights:
-          </h2>
-          <ul
-           style={ {
-            paddingLeft: '30px',
-            color: '#ffffff'
-        }}
-          >
-            { feature1 ? <li
-              style={ {
-                lineHeight: '1.6',
-              } }
-            >{ feature1 }</li> : null }
-            {feature2 ? <li
-              style={ {
-                lineHeight: '1.6',
-              } }>
-              { feature2 }</li> : null }
-            {feature3 ? <li
-             style={ {
-                lineHeight: '1.6',
-              } }
-            >{feature3 }</li> : null }
-          </ul> */}
         </div>
         <motion.div
           animate={{ opacity: 1 }}
@@ -105,10 +89,10 @@ const Project = ({
           }}
         >
           <Suspense fallback={null}>
-          <Video
-            src={ src }
+            <Video
+              src={ src }
             />
-            </Suspense>
+          </Suspense>
         </motion.div>
       </section>
     </>

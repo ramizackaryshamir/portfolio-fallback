@@ -6,7 +6,7 @@ export default function Layout({ children }) {
 
 
   return (
-    <main>
+    <>
       <header
         style={ {
            display: 'flex',
@@ -30,9 +30,9 @@ export default function Layout({ children }) {
           <Header />
         </motion.div>
       </header>
-      <section>
+      <>
         {children}
-      </section>
-    </main>
+      </>
+    </>
   );
 }

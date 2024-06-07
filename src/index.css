@@ -9,40 +9,8 @@ body {
   margin: 0px;
   box-sizing: border-box;
   color: #ffffff;
+  color: #000000;
   font-family: 'OpenSans';
-}
-
-.open-sans {
-  font-family: 'OpenSans';
-  font-size: 25px;
-  color: 'red'
-}
-
-.rmo {
-  font-family: 'RMO';
-  font-size: 30px;
-  color: 'red'
-}
-
-@font-face {
-  font-family: "OpenSans";
-  src:
-    local('OpenSans')
-    url('./assets/fonts/OpenSans.ttf') format("ttf"),
-}
-
-@font-face {
-  font-family: "RMO";
-  src:
-    local('RMO')
-    url('./assets/fonts/RubikMonoOne.ttf') format("ttf"),
-}
-
-@font-face {
-  font-family: "Tahoma";
-  src:
-    local('Tahoma')
-    url('./assets/fonts/TahomaBold.ttf') format("ttc"),
 }
 
 @font-face {
