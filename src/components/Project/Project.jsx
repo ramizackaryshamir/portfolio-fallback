@@ -1,15 +1,19 @@
-import React from "react";
+import React, {
+  Suspense,
+  lazy
+} from "react";
 import { motion } from "framer-motion";
-import Video from "../Video/Video.jsx";
+// import Video from "../Video/Video.jsx";
+const Video = lazy(()=> import("../Video/Video.jsx"))
 
 const Project = ({
   src,
   title,
   description,
-  descriptionByline,
-  descriptionFeature1,
-  descriptionFeature2,
-  descriptionFeature3, s
+  techStack,
+  feature1,
+  feature2,
+ feature3, s
 }) => {
   return (
     <>
@@ -33,6 +37,7 @@ const Project = ({
         }}
         >
           <h1
+          className='rmo'
           style={ {
           display: 'flex',
           flexDirection: 'column',
@@ -45,19 +50,20 @@ const Project = ({
             style={ {
             paddingLeft: '15px',
               listStyleType: 'none',
-             lineHeight: '1.6',
+              lineHeight: '1.6',
         }}
           >
             <li
+              className='open-sans'
                   style={ {
-             lineHeight: '1.6',
+                lineHeight: '1.6',
         }}
             >
               { description }
             </li>
             <li
             >
-              { descriptionByline }
+              { techStack }
             </li>
           </ul>
           <h2>
@@ -69,21 +75,21 @@ const Project = ({
             color: '#ffffff'
         }}
           >
-            { descriptionFeature1 ? <li
+            { feature1 ? <li
               style={ {
                 lineHeight: '1.6',
               } }
-            >{ descriptionFeature1 }</li> : null }
-            {descriptionFeature2 ? <li
+            >{ feature1 }</li> : null }
+            {feature2 ? <li
               style={ {
                 lineHeight: '1.6',
               } }>
-              { descriptionFeature2 }</li> : null }
-            { descriptionFeature3 ? <li
+              { feature2 }</li> : null }
+            {feature3 ? <li
              style={ {
                 lineHeight: '1.6',
               } }
-            >{ descriptionFeature3 }</li> : null }
+            >{feature3 }</li> : null }
           </ul>
         </div>
         <motion.div
@@ -94,10 +100,11 @@ const Project = ({
             duration: 3,
           }}
         >
+          <Suspense fallback={null}>
           <Video
-
             src={ src }
-          />
+            />
+            </Suspense>
         </motion.div>
       </section>
     </>

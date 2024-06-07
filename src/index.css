@@ -1,3 +1,16 @@
+@font-face {
+  font-family: "OpenSans";
+  src: local('OpenSans')
+    url(assets/fonts/OpenSans.ttf) format("ttf"),
+}
+
+@font-face {
+  font-family: "RMO";
+  src: local('RMO')
+    url(assets/fonts/RubikMonoOne.ttf) format("ttf"),
+}
+
+
 html {
   scroll-snap-type: y mandatory;
 }
@@ -9,4 +22,17 @@ body {
   margin: 0px;
   box-sizing: border-box;
   color: #ffffff;
+  font-family: 'OpenSans';
+}
+
+.open-sans {
+  font-family: 'OpenSans';
+  font-size: 25px;
+  color: 'red'
+}
+
+.rmo {
+  font-family: 'RMO';
+  font-size: 30px;
+  color: 'red'
 }
