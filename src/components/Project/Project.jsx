@@ -26,10 +26,10 @@ const Project = ({
           justifyContent: 'space-around',
           alignItems: 'center',
           height: '100vh',
-          width: '90vw',
+          width: '95vw',
           scrollSnapAlign: 'start',
-          backgroundColor: 'orange',
-          border: '5px solid black'
+          // backgroundColor: 'orange',
+          // border: '5px solid black'
           // backgroundColor: '#000000'
         }}
       >
@@ -37,7 +37,7 @@ const Project = ({
          style={ {
 
 
-            backgroundColor: 'purple'
+            // backgroundColor: 'purple'
 
         }}
         >
@@ -45,7 +45,7 @@ const Project = ({
           className='copperplate'
           style={ {
             paddingBottom: '15px',
-            border: '4px green solid'
+            // border: '4px green solid'
 
 
         }}
@@ -56,7 +56,7 @@ const Project = ({
               className='futura'
                style={ {
  paddingBottom: '15px',
-                border: '4px gold solid'
+                // border: '4px gold solid'
         }}
             >
               { description }
@@ -65,8 +65,8 @@ const Project = ({
               className='futura'
               style={ {
               paddingBottom: '15px',
-                border: '4px blue solid',
-                fontSize: '12px',
+                // border: '4px blue solid',
+                // fontSize: '12px',
                 fontVariant: 'small-caps',
               textAlign: 'justify',
               textJustify: 'inter-word'
@@ -80,7 +80,7 @@ const Project = ({
              style={ {
               textAlign: 'justify',
               textJustify: 'inter-word',
-              border: '4px white solid'
+              // border: '4px white solid'
         }}
             >
 
