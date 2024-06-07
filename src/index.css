@@ -1,12 +1,14 @@
 @font-face {
   font-family: "OpenSans";
-  src: local('OpenSans')
+  src:
+    local('OpenSans')
     url(assets/fonts/OpenSans.ttf) format("ttf"),
 }
 
 @font-face {
   font-family: "RMO";
-  src: local('RMO')
+  src:
+    local('RMO')
     url(assets/fonts/RubikMonoOne.ttf) format("ttf"),
 }
 

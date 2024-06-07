@@ -4,7 +4,9 @@ import React, {
 } from "react";
 import { motion } from "framer-motion";
 // import Video from "../Video/Video.jsx";
-const Video = lazy(()=> import("../Video/Video.jsx"))
+import './style.css'
+
+const Video = lazy( () => import( "../Video/Video.jsx" ) )
 
 const Project = ({
   src,
@@ -28,11 +30,12 @@ const Project = ({
         }}
       >
         <div
+         className='rmo'
          style={ {
           display: 'flex',
           flexDirection: 'column',
           alignItems: 'flex-start',
-            listStyleType: 'none',
+          listStyleType: 'none',
           paddingTop: '10px'
         }}
         >
@@ -62,11 +65,15 @@ const Project = ({
               { description }
             </li>
             <li
+
             >
               { techStack }
             </li>
           </ul>
-          <h2>
+          <section>
+            Project highlights include {feature1} {feature2} {feature3 ? feature3 : null}
+          </section>
+          {/* <h2>
             Project highlights:
           </h2>
           <ul
@@ -90,7 +97,7 @@ const Project = ({
                 lineHeight: '1.6',
               } }
             >{feature3 }</li> : null }
-          </ul>
+          </ul> */}
         </div>
         <motion.div
           animate={{ opacity: 1 }}
