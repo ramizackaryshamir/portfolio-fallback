@@ -15,7 +15,10 @@ const Project = ({
   techStack,
   feature1,
   feature2,
- feature3, s
+  feature3,
+  bold1,
+  bold2,
+  bold3
 }) => {
   return (
     <>
@@ -30,7 +33,7 @@ const Project = ({
           scrollSnapAlign: 'start',
           // backgroundColor: 'orange',
           // border: '5px solid black'
-          // backgroundColor: '#000000'
+          backgroundColor: '#036A87'
         }}
       >
         <section
@@ -65,9 +68,7 @@ const Project = ({
               className='futura'
               style={ {
               paddingBottom: '15px',
-                // border: '4px blue solid',
-                // fontSize: '12px',
-                fontVariant: 'small-caps',
+              fontVariant: 'small-caps',
               textAlign: 'justify',
               textJustify: 'inter-word'
         }}
@@ -80,11 +81,23 @@ const Project = ({
              style={ {
               textAlign: 'justify',
               textJustify: 'inter-word',
-              // border: '4px white solid'
         }}
             >
 
-            Project highlights include {feature1} {feature2} {feature3 ? feature3 : null}
+            Project highlights include
+            { feature1 ? feature1 : null }
+              <span style={ {
+              fontWeight: 'bold'
+            }}>{ bold1 ? bold1 : null }</span>
+            { feature2 ? feature2 : null }
+              <span style={ {
+              fontWeight: 'bold'
+            }}>{ bold2 ? bold2 : null }</span>
+            { feature3 ? feature3 : null }
+              <span style={ {
+              fontWeight: 'bold'
+            }}>{ bold3 ? bold3 : null }</span>
+
           </p>
         </section>
         <motion.div

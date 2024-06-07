@@ -29,8 +29,8 @@ export default function Home() {
           width: '100vw',
           gap: '10px',
           scrollSnapType: 'both mandatory',
-          // backgroundColor: 'yellow',
-          border: '10px solid red'
+          backgroundColor: '#036A87',
+          // border: '10px solid red'
         }}
       >
         <Project
@@ -38,10 +38,11 @@ export default function Home() {
           title="Discover Financial Services"
           description="Mobile Application Regression Pipeline Portal"
           techStack="ReactJS with TypeScript + React Native with TypeScript || NodeJS Express with Nginx || GitHub Actions || React Testing Library + Jest + Appium || JestAxe + Lighthouse CI CLI + Pa11y CLI"
-
-          feature1="Optimized performance across all Core Web Vitals, improving page load by 75%, page responsiveness by 43%, and visual stability by 61%."
-          feature2="Developed features for and maintained mobile regression pipeline portal using modern ReactJS design patterns to service 15 teams of React Native mobile application developers."
-         feature3="Designed performant and sturdy test suites using React Testing Library, Jest, and Appium to increase overall test coverage by 65%."
+          feature1="Performance optimization across all Core Web Vitals, "
+          bold1="improving page load by 75%, page responsiveness by 43%, and visual stability by 61%. "
+          feature2="Feature development with ReactJS and React Native. "
+            feature3="Test suite design with React Testing Library, Jest, and Appium, "
+          bold3="expanding test coverage by 65%."
         />
         <Project
           src={JNJ}
