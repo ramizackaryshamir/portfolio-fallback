@@ -23,6 +23,7 @@ const Project = ({
         style={ {
           display: 'flex',
           flexDirection: 'column',
+          justifyContent: 'space-around',
           alignItems: 'center',
           height: '100vh',
           width: '90vw',
@@ -32,34 +33,30 @@ const Project = ({
           // backgroundColor: '#000000'
         }}
       >
-        <div
+        <section
          style={ {
-          listStyleType: 'none',
-          paddingTop: '10px'
+
+
+            backgroundColor: 'purple'
+
         }}
         >
           <h1
           className='copperplate'
           style={ {
-            listStyleType: 'none',
-            backgroundColor: 'green',
+            paddingBottom: '15px',
+            border: '4px green solid'
+
 
         }}
           >
             { title }
           </h1>
-          <section
-            style={ {
-              // paddingLeft: '15px',
-              backgroundColor: 'pink',
-
-        }}
-          >
             <p
               className='futura'
                style={ {
-
-              backgroundColor: 'gold'
+ paddingBottom: '15px',
+                border: '4px gold solid'
         }}
             >
               { description }
@@ -67,19 +64,29 @@ const Project = ({
             <p
               className='futura'
               style={ {
-
-              backgroundColor: 'blue'
+              paddingBottom: '15px',
+                border: '4px blue solid',
+                fontSize: '12px',
+                fontVariant: 'small-caps',
+              textAlign: 'justify',
+              textJustify: 'inter-word'
         }}
             >
               { techStack }
             </p>
-          </section>
-          <section
+
+          <p
             className='gill-sans'
-          >
+             style={ {
+              textAlign: 'justify',
+              textJustify: 'inter-word',
+              border: '4px white solid'
+        }}
+            >
+
             Project highlights include {feature1} {feature2} {feature3 ? feature3 : null}
-          </section>
-        </div>
+          </p>
+        </section>
         <motion.div
           animate={{ opacity: 1 }}
           initial={{ opacity: 0 }}
