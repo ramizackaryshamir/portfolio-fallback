@@ -38,7 +38,7 @@ export default function Home() {
           title="Discover Financial Services"
           description="Mobile Application Regression Pipeline Portal"
           techStack="ReactJS with TypeScript + React Native with TypeScript || NodeJS Express with Nginx || GitHub Actions || React Testing Library + Jest + Appium || JestAxe + Lighthouse CI CLI + Pa11y CLI"
-          feature1="Performance optimization across all Core Web Vitals, "
+          feature1=" performance optimization across all Core Web Vitals, "
           bold1="improving page load by 75%, page responsiveness by 43%, and visual stability by 61%. "
           feature2="Feature development with ReactJS and React Native. "
             feature3="Test suite design with React Testing Library, Jest, and Appium, "
