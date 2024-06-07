@@ -40,7 +40,7 @@ export default function Home() {
           techStack="ReactJS with TypeScript + React Native with TypeScript || NodeJS Express with Nginx || GitHub Actions || React Testing Library + Jest + Appium || JestAxe + Lighthouse CI CLI + Pa11y CLI"
           feature1=" performance optimization across all Core Web Vitals, "
           bold1="improving page load by 75%, page responsiveness by 43%, and visual stability by 61%. "
-          feature2="Feature development with ReactJS and React Native. "
+          feature2="Feature development for internal applications with ReactJS and for customer-facing applications with React Native. "
             feature3="Test suite design with React Testing Library, Jest, and Appium, "
           bold3="expanding test coverage by 65%."
         />
@@ -48,18 +48,17 @@ export default function Home() {
           src={JNJ}
           title="Johnson and Johnson"
           description="Johnson and Johnson Vision website"
-          techStack="Stack:"
-          feature1="Piloted B2B Customer Loyalty website using NextJS, TailwindCSS, React, and Redux to manage Johnson and Johnson Vision’s alliance of global GPOs."
-          feature2="Consulted in all aspects of SDLC and lead team of 4 developers in redesign of Johnson and Johnson Vision’s customer-facing site."
+          techStack="NextJS + Tailwind CSS || ReactJS with TypeScript || GitHub Actions || Vitest + Puppeteer"
+          feature1=" engineering B2B Customer Loyalty website to manage Johnson and Johnson Vision’s alliance of global GPOs. "
+          feature2="Providing strategic consultation in all aspects of SDLC for redesign of Johnson and Johnson Vision’s customer-facing site."
         />
         <Project
           src={CC92MB}
           title="Coca Cola"
-          description="Coca Cola ReactJS and React Native component libraries"
-          techStack="Stack:"
-          feature1="No libraries. No modules. No frameworks. 100% vanilla JavaScript/HTML/CSS NYT news widget."
-          feature2="Utilizes New York Times 'Times Wire API' to retrieve up-to-the-minute stream of nytimes articles."
-         feature3="Implementation of CSS Grid and CSS Flexbox."
+          description="ReactJS and React Native component libraries"
+          techStack="SreactJS with TypeScript ||} React Native with TypeScript || Storybook || tsup + Changesets || React Dev Tools + Xcode Instruments + Android Studio Profiler"
+          feature1=" developing UI library of 100+ custom React Web and 50+ custom React Native high quality, resilient components. "
+          feature2="Working closely with backend developers to integrate UI components with server-side logic."
         />
         <Project
           src={NA}
