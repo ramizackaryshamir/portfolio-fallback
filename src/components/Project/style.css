@@ -1,11 +1,32 @@
-.open-sans {
-  font-family: 'OpenSans';
-  font-size: 25px;
+.tahoma {
+  font-family: 'Tahoma';
+  font-size: 30px;
   color: 'red'
 }
 
-.rmo {
-  font-family: 'RMO';
+.phosphate {
+  font-family: 'Phosphate';
   font-size: 30px;
   color: 'red'
+}
+
+.gill-sans {
+  font-family: 'GillSans';
+  font-size: 17px;
+  line-height: 1.6;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.copperplate {
+  font-family: 'Copperplate';
+  font-size: 20px;
+}
+
+.futura {
+  font-family: 'Futura';
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: justify;
+  text-justify: inter-word;
 }

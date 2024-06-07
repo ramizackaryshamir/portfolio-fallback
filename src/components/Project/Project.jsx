@@ -30,7 +30,7 @@ const Project = ({
         }}
       >
         <div
-         className='rmo'
+
          style={ {
           display: 'flex',
           flexDirection: 'column',
@@ -40,7 +40,7 @@ const Project = ({
         }}
         >
           <h1
-          className='rmo'
+          className='copperplate'
           style={ {
           display: 'flex',
           flexDirection: 'column',
@@ -49,28 +49,25 @@ const Project = ({
           >
             { title }
           </h1>
-          <ul
+          <section
             style={ {
             paddingLeft: '15px',
-              listStyleType: 'none',
-              lineHeight: '1.6',
         }}
           >
-            <li
-              className='open-sans'
-                  style={ {
-                lineHeight: '1.6',
-        }}
+            <p
+              className='futura'
             >
               { description }
-            </li>
-            <li
-
+            </p>
+            <p
+             className='futura'
             >
               { techStack }
-            </li>
-          </ul>
-          <section>
+            </p>
+          </section>
+          <section
+            className='gill-sans'
+          >
             Project highlights include {feature1} {feature2} {feature3 ? feature3 : null}
           </section>
           {/* <h2>
