@@ -30,26 +30,15 @@ const Project = ({
           height: '100vh',
           width: '95vw',
           scrollSnapAlign: 'start',
-          // backgroundColor: 'orange',
-          // border: '5px solid black'
           backgroundColor: '#036A87'
         }}
       >
         <section
-         style={ {
-
-
-            // backgroundColor: 'purple'
-
-        }}
         >
           <h1
           className='copperplate'
           style={ {
             paddingBottom: '15px',
-            // border: '4px green solid'
-
-
         }}
           >
             { title }
@@ -57,9 +46,8 @@ const Project = ({
             <p
               className='futura'
                style={ {
-                   paddingBottom: '15px',
-                // border: '4px gold solid'
-        }}
+                paddingBottom: '15px',
+               }}
             >
               { description }
             </p>
