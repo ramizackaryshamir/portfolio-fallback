@@ -1,22 +1,12 @@
-import React, {
-  Suspense,
-  lazy
-} from "react";
+import React from "react";
 import Layout from "../../components/shared/Layout/Layout.jsx";
 import Project from "../../components/Project/Project.jsx";
 import DFS from '../../assets/videos/dfs-mrp.mp4';
 import JNJ from '../../assets/videos/jnjvision.mp4';
 import CC92MB from '../../assets/videos/coca-cola_92mb.mp4';
 import NA from '../../assets/videos/new-alternatives.mp4';
-import SAMSHA from '../../assets/videos/samsha.mp4';
 import TABOOLA from '../../assets/videos/taboola.mp4';
 
-// const DFS = lazy ( () => import( '../../assets/videos/dfs-mrp.mp4' ))
-// const JNJ = lazy (() => import('../../assets/videos/jnjvision.mp4'))
-// const CC92MB = lazy( () => import( '../../assets/videos/coca-cola_92mb.mp4' ) )
-// const NA = lazy( () => import( '../../assets/videos/new-alternatives.mp4' ) )
-// const SAMSHA = lazy( () => import( '../../assets/videos/samsha.mp4' ) )
-// const TABOOLA = lazy(() => import('../../assets/videos/taboola.mp4'))
 export default function Home() {
   return (
     <>
@@ -30,7 +20,6 @@ export default function Home() {
           gap: '10px',
           scrollSnapType: 'both mandatory',
           backgroundColor: '#036A87',
-          // border: '10px solid red'
         }}
       >
         <Project
@@ -41,7 +30,7 @@ export default function Home() {
           feature1=" performance optimization across all Core Web Vitals, "
           bold1="improving page load by 75%, page responsiveness by 43%, and visual stability by 61%. "
           feature2="Feature development for internal applications with ReactJS and for customer-facing applications with React Native. "
-            feature3="Test suite design with React Testing Library, Jest, and Appium, "
+          feature3="Test suite design with React Testing Library, Jest, and Appium, "
           bold3="expanding test coverage by 65%."
         />
         <Project
@@ -50,43 +39,38 @@ export default function Home() {
           description="Johnson and Johnson Vision website"
           techStack="NextJS + Tailwind CSS || ReactJS with TypeScript || GitHub Actions || Vitest + Puppeteer"
           feature1=" engineering B2B Customer Loyalty website to manage Johnson and Johnson Vision’s alliance of global GPOs. "
-          feature2="Providing strategic consultation in all aspects of SDLC for redesign of Johnson and Johnson Vision’s customer-facing site."
+          feature2="Providing "
+          bold2="strategic consultation in all aspects of SDLC "
+          feature3="for redesign of Johnson and Johnson Vision’s customer-facing site."
         />
         <Project
           src={CC92MB}
           title="Coca Cola"
           description="ReactJS and React Native component libraries"
-          techStack="SreactJS with TypeScript ||} React Native with TypeScript || Storybook || tsup + Changesets || React Dev Tools + Xcode Instruments + Android Studio Profiler"
-          feature1=" developing UI library of 100+ custom React Web and 50+ custom React Native high quality, resilient components. "
-          feature2="Working closely with backend developers to integrate UI components with server-side logic."
+          techStack="SreactJS with TypeScript ||} React Native with TypeScript || Storybook || Webpack + Babel || React Dev Tools + Xcode Instruments + Android Studio Profiler"
+          feature1=" developing "
+          bold1="UI library of 100+ custom React Web and 50+ custom React Native high quality, resilient components; "
+          feature2=" working closely with backend developers to integrate UI components with server-side logic."
         />
         <Project
           src={NA}
           title="New Alternatives"
-          description=""
-          techStack="Stack: ReactJS "
-          feature1="Worked with a design team to translate wire-frames into a scalable high fidelity, front-end architecture."
-          feature2="Optimized the delivery of code assets to browsers across a wide spectrum of devices."
-         feature3="Seamless integration of MongoDB, Express, React, and Node.js to implement full CRUD functionality."
-        />
-        <Project
-          src={SAMSHA}
-          title="NYT News Widget"
-          description="Vanilla JavaScript News Widget"
-          techStack="Stack:"
-          feature1="No libraries. No modules. No frameworks. 100% vanilla JavaScript/HTML/CSS NYT news widget."
-          feature2="Utilizes New York Times 'Times Wire API' to retrieve up-to-the-minute stream of nytimes articles."
-         feature3="Implementation of CSS Grid and CSS Flexbox."
+          description="Redesign of customer-facing website"
+          techStack="Stack: ReactJS with TypeScript || GitHub Actions || React Testing Library + Jest || JestAxe + LightHouse CI CLI + Pa11y CLI"
+          feature1=" redesigning customer-facing website for LGBTQ+ Homeless Youth center in NYC using React and TypeScript."
+          feature2=" Establishing"
+          bold2=" CI/CD pipeline for software development process "
+          feature3="using GitHub Actions."
         />
         <Project
           src={TABOOLA}
           title="Taboola"
-          description="MERN Stack Front to Back"
-          techStack="Stack:"
-          feature1="Worked with a design team to translate wire-frames into a scalable high fidelity, front-end architecture."
-          feature2="Optimized the delivery of code assets to browsers across a wide spectrum of devices."
-         feature3="Seamless integration of MongoDB, Express, React, and Node.js to implement full CRUD functionality."
-        />
+          description="Advertisemnet widgets for online news articles"
+          techStack="ReactJS with TypeScript || Selenium + Playwright"
+          feature1=" working on Taboola’s recommendations ad formats and user experience; "
+          feature2="collaborating with business teams throughout the company, and directly with external customers’ product and technical teams, to support clients in reaching conversion obejctives; "
+          feature3="developing 'Recommended For You' and 'Around The World' below-the-fold advert widgets for online news articles."
+          />
       </div>
       </Layout>
     </>

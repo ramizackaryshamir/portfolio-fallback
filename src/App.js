@@ -1,10 +1,7 @@
-import React, {
-  Suspense,
-  lazy
-} from "react";
+import React from "react";
 import {
-Routes,
-Route,
+  Routes,
+  Route,
 } from "react-router-dom";
 import Home from "./screens/Home/Home.jsx";
 import Contact from "./screens/Contact/Contact.jsx";

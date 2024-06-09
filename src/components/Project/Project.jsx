@@ -3,7 +3,6 @@ import React, {
   lazy
 } from "react";
 import { motion } from "framer-motion";
-// import Video from "../Video/Video.jsx";
 import './style.css'
 
 const Video = lazy( () => import( "../Video/Video.jsx" ) )
@@ -58,7 +57,7 @@ const Project = ({
             <p
               className='futura'
                style={ {
- paddingBottom: '15px',
+                   paddingBottom: '15px',
                 // border: '4px gold solid'
         }}
             >
@@ -80,22 +79,26 @@ const Project = ({
             className='gill-sans'
              style={ {
               textAlign: 'justify',
-              textJustify: 'inter-word',
+               textJustify: 'inter-word',
+              color: '#3b3b42'
         }}
             >
 
             Project highlights include
             { feature1 ? feature1 : null }
-              <span style={ {
-              fontWeight: 'bold'
+             <span style={ {
+              fontWeight: 'bold',
+              color: '#ffffff'
             }}>{ bold1 ? bold1 : null }</span>
             { feature2 ? feature2 : null }
               <span style={ {
-              fontWeight: 'bold'
+              fontWeight: 'bold',
+              color: '#ffffff'
             }}>{ bold2 ? bold2 : null }</span>
             { feature3 ? feature3 : null }
-              <span style={ {
-              fontWeight: 'bold'
+            <span style={ {
+               fontWeight: 'bold',
+              color: '#ffffff'
             }}>{ bold3 ? bold3 : null }</span>
 
           </p>
