@@ -78,7 +78,7 @@ const Project = ({
             style={ {
               fontFamily: 'GillSans',
               fontSize: '16px',
-              lineHeight: 1.3,
+              lineHeight: 1.4,
               textAlign: 'justify',
               textJustify: 'inter-word',
               color: '#3b3b42',
