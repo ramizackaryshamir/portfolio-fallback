@@ -34,7 +34,7 @@ const Contact = () => {
             <img
                 style={ {
                  width: '20vw',
-                    maxWidth: '170px'
+                 maxWidth: '170px'
               }}
               src={LinkedIn}
               alt="LinkedIn: in/ramizackaryshamir"
