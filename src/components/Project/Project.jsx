@@ -36,10 +36,8 @@ const Project = ({
       >
         <section
           style={ {
-          //
             position: 'relative',
             top: '40px'
-          //
           }}
       >
           <h1
@@ -79,8 +77,8 @@ const Project = ({
           <p
             style={ {
               fontFamily: 'GillSans',
-              fontSize: '17px',
-              lineHeight: 1.5,
+              fontSize: '16px',
+              lineHeight: 1.3,
               textAlign: 'justify',
               textJustify: 'inter-word',
               color: '#3b3b42',
