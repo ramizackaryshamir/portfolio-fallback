@@ -32,7 +32,7 @@ const Project = ({
           maxWidth: '900px',
           paddingRight: '15px',
           paddingLeft: '15px',
-          scrollSnapAlign: 'start',
+          scrollSnapAlign: 'center',
           backgroundColor: '#036A87',
         }}
       >
