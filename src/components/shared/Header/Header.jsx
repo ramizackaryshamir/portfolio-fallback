@@ -5,6 +5,7 @@ export default function Header() {
   return (
     <>
       <header
+
           style={ {
             display: 'flex',
             flexDirection: 'row',
@@ -14,8 +15,10 @@ export default function Header() {
           }}
       >
         <article
+          className='copperplate'
           style={ {
-            color: 'black'
+            color: 'black',
+            fontSize: '15px'
           }}
         >
           Rami Zackary Shamir

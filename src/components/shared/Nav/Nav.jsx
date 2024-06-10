@@ -4,6 +4,7 @@ export default function Nav() {
 
   return (
     <ul
+
       style={ {
         display: 'flex',
         flexDirection: 'row',
@@ -17,7 +18,9 @@ export default function Nav() {
           to="/"
           style={ {
             textDecoration: 'none',
-            color: 'black'
+            color: 'black',
+            fontFamily: 'copperplate',
+            fontSize: '15px'
           }}
         >
           Projects
@@ -28,7 +31,9 @@ export default function Nav() {
           to="/contact"
            style={ {
             textDecoration: 'none',
-            color: 'black'
+             color: 'black',
+             fontFamily: 'copperplate',
+            fontSize: '15px'
           }}
         >
           Contact

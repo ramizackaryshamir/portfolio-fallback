@@ -3,7 +3,6 @@ import Header from "../Header/Header.jsx";
 
 export default function Layout({ children }) {
 
-
   return (
     <>
       <header
@@ -12,7 +11,11 @@ export default function Layout({ children }) {
            flexDirection: 'column',
            position: 'sticky',
            top: 0,
+           left: 0,
            width: '100vw',
+           zIndex: 1,
+           padding: '10px 0 10px 10px',
+           border: '1px solid black',
            backgroundColor: 'white',
            overflowX: 'hidden',
            overflowY: 'auto',
@@ -22,8 +25,8 @@ export default function Layout({ children }) {
           animate={{ opacity: 1 }}
           initial={{ opacity: 0 }}
           transition={{
-            delay: 1,
-            duration: 6,
+            delay: 0,
+            duration: 3,
           }}
         >
           <Header />

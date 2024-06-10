@@ -13,13 +13,6 @@ body {
 }
 
 @font-face {
-  font-family: "Phosphate";
-  src:
-    local('Phosphate')
-    url('./assets/fonts/Phosphate.ttc') format("ttc"),
-}
-
-@font-face {
   font-family: "GillSans";
   src:
     local('GillSans')

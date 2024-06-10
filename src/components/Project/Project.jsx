@@ -3,7 +3,6 @@ import React, {
   lazy
 } from "react";
 import { motion } from "framer-motion";
-import './style.css'
 
 const Video = lazy( () => import( "../Video/Video.jsx" ) )
 
@@ -25,53 +24,62 @@ const Project = ({
         style={ {
           display: 'flex',
           flexDirection: 'column',
-          justifyContent: 'space-around',
+          justifyContent: 'space-evenly',
           alignItems: 'center',
           height: '100vh',
+          maxHeight: '900px',
           width: '95vw',
+          maxWidth: '900px',
           scrollSnapAlign: 'start',
-          backgroundColor: '#036A87'
+          // backgroundColor: '#036A87'
         }}
       >
         <section
-        >
+      >
           <h1
-          className='copperplate'
           style={ {
-            paddingBottom: '15px',
+            paddingBottom: '5px',
+            fontFamily: 'Copperplate',
+            fontSize: '20px',
+            color: '#ffffff'
         }}
           >
             { title }
           </h1>
             <p
-              className='futura'
                style={ {
                 paddingBottom: '15px',
+                fontFamily: 'Copperplate',
+                fontSize: '15px',
+                color: '#ffffff'
                }}
             >
               { description }
             </p>
             <p
-              className='futura'
               style={ {
-              paddingBottom: '15px',
+              paddingBottom: '10px',
               fontVariant: 'small-caps',
               textAlign: 'justify',
-              textJustify: 'inter-word'
+              textJustify: 'inter-word',
+              fontFamily: 'Futura',
+              fontSize: '13px',
+              color: '#ffffff'
         }}
             >
               { techStack }
             </p>
 
           <p
-            className='gill-sans'
-             style={ {
+            style={ {
+              fontFamily: 'GillSans',
+              fontSize: '17px',
+              lineHeight: 1.5,
               textAlign: 'justify',
-               textJustify: 'inter-word',
-              color: '#3b3b42'
+              textJustify: 'inter-word',
+              color: '#3b3b42',
         }}
             >
-
             Project highlights include
             { feature1 ? feature1 : null }
              <span style={ {
@@ -85,7 +93,7 @@ const Project = ({
             }}>{ bold2 ? bold2 : null }</span>
             { feature3 ? feature3 : null }
             <span style={ {
-               fontWeight: 'bold',
+              fontWeight: 'bold',
               color: '#ffffff'
             }}>{ bold3 ? bold3 : null }</span>
 
@@ -95,7 +103,7 @@ const Project = ({
           animate={{ opacity: 1 }}
           initial={{ opacity: 0 }}
           transition={{
-            delay: 1,
+            delay: .5,
             duration: 3,
           }}
         >
