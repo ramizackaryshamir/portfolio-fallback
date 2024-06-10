@@ -24,7 +24,7 @@ const Project = ({
         style={ {
           display: 'flex',
           flexDirection: 'column',
-          justifyContent: 'space-evenly',
+          justifyContent: 'space-around',
           alignItems: 'center',
           height: '100vh',
           maxHeight: '900px',
