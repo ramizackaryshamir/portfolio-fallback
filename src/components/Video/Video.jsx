@@ -5,8 +5,6 @@ const Video = ({ src }) => {
           width: '100vw',
           maxWidth: '900px',
           maxHeight: '430px',
-          position: 'relative',
-          top: '50px'
         }}
         autoPlay={true}
         muted={true}

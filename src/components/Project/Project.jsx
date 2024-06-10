@@ -24,7 +24,7 @@ const Project = ({
         style={ {
           display: 'flex',
           flexDirection: 'column',
-          justifyContent: 'space-around',
+          justifyContent: 'space-evenly',
           alignItems: 'center',
           height: '100vh',
           maxHeight: '900px',
@@ -55,7 +55,7 @@ const Project = ({
             <p
                style={ {
                 paddingBottom: '25px',
-              fontFamily: 'Copperplate',
+                fontFamily: 'Copperplate',
                 fontSize: '15px',
                 color: '#ffffff'
                }}
