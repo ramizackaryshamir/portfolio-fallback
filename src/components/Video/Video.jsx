@@ -5,6 +5,7 @@ const Video = ({ src }) => {
         style={ {
           objectFit: 'cover',
           width: '100vw',
+          maxWidth: '900px'
         }}
         autoPlay={true}
         muted={true}
