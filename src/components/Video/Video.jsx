@@ -3,11 +3,11 @@ const Video = ({ src }) => {
     <>
       <video
         style={ {
-          objectFit: 'cover',
           width: '100vw',
           maxWidth: '900px',
+          maxHeight: '430px',
           position: 'relative',
-          bottom: '-25px'
+          bottom: '-65px'
         }}
         autoPlay={true}
         muted={true}
