@@ -90,19 +90,19 @@ const Project = ({
             { feature1 ? feature1 : null }
              <span style={ {
               fontWeight: 'bold',
-              fontSize: '14.5px',
+              fontSize: '14px',
               color: '#ffffff'
             }}>{ bold1 ? bold1 : null }</span>
             { feature2 ? feature2 : null }
               <span style={ {
               fontWeight: 'bold',
-              fontSize: '14.5px',
+              fontSize: '14px',
               color: '#ffffff'
             }}>{ bold2 ? bold2 : null }</span>
             { feature3 ? feature3 : null }
             <span style={ {
               fontWeight: 'bold',
-              fontSize: '14.5px',
+              fontSize: '14px',
               color: '#ffffff'
             }}>{ bold3 ? bold3 : null }</span>
 
