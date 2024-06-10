@@ -24,7 +24,7 @@ const Project = ({
         style={ {
           display: 'flex',
           flexDirection: 'column',
-          justifyContent: 'space-evenly',
+          justifyContent: 'space-around',
           alignItems: 'center',
           height: '100vh',
           maxHeight: '900px',
@@ -52,15 +52,15 @@ const Project = ({
           </h1>
             <p
                style={ {
-                paddingBottom: '15px',
-                fontFamily: 'Copperplate',
+                paddingBottom: '25px',
+              fontFamily: 'Copperplate',
                 fontSize: '15px',
                 color: '#ffffff'
                }}
             >
               { description }
             </p>
-            <p
+            {/* <p
               style={ {
               paddingBottom: '10px',
               fontVariant: 'small-caps',
@@ -72,7 +72,7 @@ const Project = ({
         }}
             >
               { techStack }
-            </p>
+            </p> */}
 
           <p
             style={ {
