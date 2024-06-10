@@ -17,7 +17,7 @@ export default function Home() {
           flexDirection: 'column',
           alignItems: 'center',
           width: '100vw',
-          gap: '10px',
+          // gap: '10px',
           scrollSnapType: 'both mandatory',
           backgroundColor: '#ffffff',
         }}
