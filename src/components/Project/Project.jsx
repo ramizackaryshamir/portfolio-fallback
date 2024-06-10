@@ -28,8 +28,10 @@ const Project = ({
           alignItems: 'center',
           height: '100vh',
           maxHeight: '900px',
-          width: '95vw',
+          width: '100vw',
           maxWidth: '900px',
+          paddingRight: '15px',
+          paddingLeft: '15px',
           scrollSnapAlign: 'start',
           backgroundColor: '#036A87',
         }}

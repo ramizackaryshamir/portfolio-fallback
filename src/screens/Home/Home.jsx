@@ -19,7 +19,7 @@ export default function Home() {
           width: '100vw',
           gap: '10px',
           scrollSnapType: 'both mandatory',
-          backgroundColor: '#036A87',
+          backgroundColor: '#ffffff',
         }}
       >
         <Project
