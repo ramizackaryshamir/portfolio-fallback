@@ -1,5 +1,5 @@
 import Email from "../../assets/images/email-logo.png";
-import LinkedIn from "../../assets/images/linkedin-logo.png";
+// import LinkedIn from "../../assets/images/linkedin-logo.png";
 import GitHub from "../../assets/images/github-logo.png";
 import Layout from "../../components/shared/Layout/Layout.jsx";
 
@@ -30,7 +30,7 @@ const Contact = () => {
               alt="Email: rzshamir@icloud.com"
             />
           </a>
-          <a href="https://www.linkedin.com/in/ramizackaryshamir/">
+          {/* <a href="https://www.linkedin.com/in/ramizackaryshamir/">
             <img
                 style={ {
                  width: '20vw',
@@ -39,7 +39,7 @@ const Contact = () => {
               src={LinkedIn}
               alt="LinkedIn: in/ramizackaryshamir"
             />
-          </a>
+          </a> */}
           <a href="https://github.com/ramizackaryshamir/">
             <img
               style={ {
