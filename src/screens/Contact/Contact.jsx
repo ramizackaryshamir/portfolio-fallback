@@ -22,6 +22,7 @@ const Contact = () => {
             <img
               style={ {
                 width: '20vw',
+                maxWidth: '170px'
               }}
               src={Email}
               alt="Email: rzshamir@icloud.com"
@@ -30,7 +31,8 @@ const Contact = () => {
           <a href="https://www.linkedin.com/in/ramizackaryshamir/">
             <img
                 style={ {
-                width: '20vw',
+                 width: '20vw',
+                    maxWidth: '170px'
               }}
               src={LinkedIn}
               alt="LinkedIn: in/ramizackaryshamir"
@@ -39,7 +41,8 @@ const Contact = () => {
           <a href="https://github.com/ramizackaryshamir/">
             <img
               style={ {
-                width: '20vw',
+                 width: '20vw',
+                   maxWidth: '170px'
               }}
               src={GitHub}
               alt="GitHub: ramizackaryshamir"

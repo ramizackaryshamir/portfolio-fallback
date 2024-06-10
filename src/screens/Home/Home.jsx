@@ -39,8 +39,7 @@ export default function Home() {
           description="Johnson and Johnson Vision website"
           techStack="NextJS + Tailwind CSS || ReactJS with TypeScript || GitHub Actions || Vitest + Puppeteer"
           feature1=" engineering B2B Customer Loyalty website to manage Johnson and Johnson Vision’s alliance of global GPOs. "
-          feature2="Providing "
-          bold2="strategic consultation in all aspects of SDLC "
+          bold2="Providing strategic consultation in all aspects of SDLC "
           feature3="for redesign of Johnson and Johnson Vision’s customer-facing site."
         />
         <Project
@@ -48,8 +47,7 @@ export default function Home() {
           title="Coca Cola"
           description="ReactJS and React Native component libraries"
           techStack="SreactJS with TypeScript ||} React Native with TypeScript || Storybook || Webpack + Babel || React Dev Tools + Xcode Instruments + Android Studio Profiler"
-          feature1=" developing "
-          bold1="UI library of 100+ custom React Web and 50+ custom React Native high quality, resilient components; "
+          bold1=" developing UI library of 100+ custom React Web and 50+ custom React Native high quality, resilient components; "
           feature2=" working closely with backend developers to integrate UI components with server-side logic."
         />
         <Project
@@ -58,8 +56,7 @@ export default function Home() {
           description="Redesign of customer-facing website"
           techStack="Stack: ReactJS with TypeScript || GitHub Actions || React Testing Library + Jest || JestAxe + LightHouse CI CLI + Pa11y CLI"
           feature1=" redesigning customer-facing website for LGBTQ+ Homeless Youth center in NYC using React and TypeScript."
-          feature2=" Establishing"
-          bold2=" CI/CD pipeline for software development process "
+          bold2=" Establishing CI/CD pipeline for software development process "
           feature3="using GitHub Actions."
         />
         <Project
@@ -68,7 +65,9 @@ export default function Home() {
           description="Advertisemnet widgets for online news articles"
           techStack="ReactJS with TypeScript || Selenium + Playwright"
           feature1=" working on Taboola’s recommendations ad formats and user experience; "
-          feature2="collaborating with business teams throughout the company, and directly with external customers’ product and technical teams, to support clients in reaching conversion obejctives; "
+          bold1="collaborating with business teams throughout the company "
+          feature2=" and directly with external customers’ product and technical teams "
+          bold2="to support clients in reaching conversion obejctives; "
           feature3="developing 'Recommended For You' and 'Around The World' below-the-fold advert widgets for online news articles."
           />
       </div>
