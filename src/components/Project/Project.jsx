@@ -38,7 +38,7 @@ const Project = ({
           style={ {
           //
             position: 'relative',
-            top: '30px'
+            top: '40px'
           //
           }}
       >
