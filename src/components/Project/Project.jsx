@@ -35,6 +35,12 @@ const Project = ({
         }}
       >
         <section
+          style={ {
+          //
+            position: 'relative',
+            top: '30px'
+          //
+          }}
       >
           <h1
           style={ {
