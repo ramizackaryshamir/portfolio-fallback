@@ -12,6 +12,34 @@ body {
   font-family: 'OpenSans';
 }
 
+/* a,
+a:hover,
+a:focus {
+    color: none;
+    text-decoration: none;
+    background-color: inherit;
+    outline: none;
+}
+
+img,
+img:hover,
+img:focus {
+    color: none;
+    text-decoration: none;
+    background-color: inherit;
+    outline: none;
+}
+
+*:focus {
+  outline: 0 !important;
+  box-shadow: none !important;
+}
+
+*:focus:not(:focus-visible) {
+  outline: 0 !important;
+  box-shadow: none !important;
+} */
+
 @font-face {
   font-family: "Phosphate";
   src:

@@ -22,7 +22,9 @@ const Contact = () => {
             <img
               style={ {
                 width: '20vw',
-                maxWidth: '170px'
+                maxWidth: '170px',
+                outline: 'none',
+                textDecoration: 'none'
               }}
               src={Email}
               alt="Email: rzshamir@icloud.com"
