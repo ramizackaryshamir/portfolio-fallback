@@ -18,7 +18,7 @@ export default function Home() {
           alignItems: 'center',
           width: '100vw',
           gap: '10px',
-          scrollSnapType: 'both mandatory',
+          scrollSnapType: 'both proximity',
           backgroundColor: '#ffffff',
         }}
       >
