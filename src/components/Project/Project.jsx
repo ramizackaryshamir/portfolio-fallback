@@ -31,7 +31,6 @@ const Project = ({
           width: '95vw',
           maxWidth: '900px',
           scrollSnapAlign: 'start',
-          // backgroundColor: '#036A87'
         }}
       >
         <section
