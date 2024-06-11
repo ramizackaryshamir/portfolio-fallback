@@ -83,7 +83,7 @@ const Project = ({
               lineHeight: 1.5,
               textAlign: 'justify',
               textJustify: 'inter-word',
-              color: '#3b3b42',
+              color: '#133C47',
         }}
             >
             Project highlights include
