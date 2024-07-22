@@ -8,6 +8,7 @@ import NA from '../../assets/videos/new-alternatives.mp4';
 import TABOOLA from '../../assets/videos/taboola.mp4';
 
 export default function Home() {
+
   return (
     <>
       <Layout>

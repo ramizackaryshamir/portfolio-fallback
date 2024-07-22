@@ -3,7 +3,7 @@ import React, {
   lazy
 } from "react";
 import { motion } from "framer-motion";
-
+import useScreenOrientation from "../../hooks/useScreenOrientation.js";
 const Video = lazy( () => import( "../Video/Video.jsx" ) )
 
 const Project = ({
@@ -18,6 +18,7 @@ const Project = ({
   bold2,
   bold3
 }) => {
+  const orientation = useScreenOrientation()
   return (
     <>
       <section
