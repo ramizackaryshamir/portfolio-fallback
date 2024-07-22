@@ -4,6 +4,7 @@ import React, {
 } from "react";
 import { motion } from "framer-motion";
 import useScreenOrientation from "../../hooks/useScreenOrientation.js";
+
 const Video = lazy( () => import( "../Video/Video.jsx" ) )
 
 const Project = ({
@@ -22,7 +23,7 @@ const Project = ({
   return (
     <>
       <section
-        style={ {
+        style={ orientation === 'portrait-primary' ?{
           display: 'flex',
           flexDirection: 'column',
           justifyContent: 'space-around',
@@ -33,6 +34,15 @@ const Project = ({
           maxWidth: '900px',
           paddingRight: '15px',
           paddingLeft: '15px',
+          scrollSnapAlign: 'start',
+          backgroundColor: '#036A87',
+        }: {
+          display: 'flex',
+          flexDirection: 'row',
+          justifyContent: 'center',
+          alignItems: 'center',
+          height: '100vh',
+          width: '100vw',
           scrollSnapAlign: 'start',
           backgroundColor: '#036A87',
         }}
@@ -78,14 +88,24 @@ const Project = ({
             </p> */}
 
           <p
-            style={ {
+            style={ orientation === 'portrait-primary' ? {
               fontFamily: 'GillSans',
               fontSize: '17px',
               lineHeight: 1.5,
               textAlign: 'justify',
               textJustify: 'inter-word',
               color: '#0B2329',
-        }}
+              } : {
+              width: '390px',
+              paddingRight: '20px',
+              paddingBottom: '70px',
+              fontFamily: 'GillSans',
+              fontSize: '17px',
+              lineHeight: 1.5,
+              textAlign: 'justify',
+              textJustify: 'inter-word',
+              color: '#0B2329',
+            }}
             >
             Project highlights include
             { feature1 ? feature1 : null }
