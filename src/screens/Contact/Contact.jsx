@@ -18,7 +18,7 @@ const Contact = () => {
           backgroundColor: '#036A87'
         }}
       >
-          <a href="mailto:rzshamir@icloud.com">
+          <a href="mailto:rami.zackary.shamir@icloud.com">
             <img
               style={ {
                 width: '20vw',
