@@ -4,7 +4,9 @@ const Video = ({ src }) => {
   const orientation = useScreenOrientation()
   return (
       <video
-        style={ orientation === 'portrait-primary' ? {
+
+        style={ window.screen.width < 1000 ? (
+          orientation === 'portrait-primary' ? {
           width: '100vw',
           maxWidth: '900px',
           maxHeight: '430px',
@@ -12,7 +14,15 @@ const Video = ({ src }) => {
           width: '100vw',
           maxWidth: '300px',
           maxHeight: '400px',
-        }}
+        }
+        ) : (
+          {
+            width: '50vw',
+            minWidth: '500px',
+            minHeight: '600px'
+          }
+        )
+      }
         autoPlay={true}
         muted={true}
         loop={true}

@@ -12,6 +12,8 @@ export default function Header() {
             justifyContent: "space-between",
             alignItems: 'center',
             height: '30px',
+            paddingRight: '5%',
+            paddingLeft: '5%',
           }}
       >
         <article

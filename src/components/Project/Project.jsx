@@ -19,11 +19,14 @@ const Project = ({
   bold2,
   bold3
 }) => {
+
   const orientation = useScreenOrientation()
+
   return (
     <>
       <section
-        style={ orientation === 'portrait-primary' ?{
+        style={ window.screen.width < 1000 ? (
+          orientation === 'portrait-primary' ? {
           display: 'flex',
           flexDirection: 'column',
           justifyContent: 'space-around',
@@ -36,16 +39,33 @@ const Project = ({
           paddingLeft: '15px',
           scrollSnapAlign: 'start',
           backgroundColor: '#036A87',
-        }: {
+        } : {
           display: 'flex',
           flexDirection: 'row',
-          justifyContent: 'center',
+          justifyContent: 'space-between',
           alignItems: 'center',
           height: '100vh',
           width: '100vw',
+          paddingRight: '15px',
+          paddingLeft: '15px',
           scrollSnapAlign: 'start',
           backgroundColor: '#036A87',
-        }}
+        }
+       ) : (
+        {
+        display: 'flex',
+        flexDirection: 'row',
+        justifyContent: 'space-around',
+        alignItems: 'center',
+        height: '100vh',
+        width: '100vw',
+        scrollSnapAlign: 'start',
+        backgroundColor: '#036A87',
+        }
+       )
+
+
+      }
       >
         <section
           style={ {
