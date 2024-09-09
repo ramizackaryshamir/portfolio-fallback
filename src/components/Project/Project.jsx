@@ -153,7 +153,6 @@ const Project = ({
           animate={{ opacity: 1 }}
           initial={{ opacity: 0 }}
           transition={{
-            delay: .5,
             duration: 3,
           }}
         >
