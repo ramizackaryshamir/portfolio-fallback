@@ -4,12 +4,13 @@ import React, {
 } from "react";
 import { motion } from "framer-motion";
 import useScreenOrientation from "../../hooks/useScreenOrientation.js";
-
+import {Link} from 'react-router-dom'
 const Video = lazy( () => import( "../Video/Video.jsx" ) )
 
 const Project = ({
   src,
   title,
+  urlProjectId,
   description,
   techStack,
   feature1,
@@ -63,8 +64,6 @@ const Project = ({
         backgroundColor: '#036A87',
         }
        )
-
-
       }
       >
         <section

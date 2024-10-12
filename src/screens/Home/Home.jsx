@@ -13,6 +13,7 @@ export default function Home() {
     {
           src:DFS,
           title:"Discover Financial Services",
+          urlProjectId:'discover-financial-services',
           description:"Mobile Application Regression Pipeline Portal",
           techStack:"ReactJS with TypeScript + React Native with TypeScript || NodeJS Express with Nginx || GitHub Actions || React Testing Library + Jest + Appium || JestAxe + Lighthouse CI CLI + Pa11y CLI",
           feature1:" performance optimization across all Core Web Vitals, ",
@@ -24,6 +25,7 @@ export default function Home() {
     {
       src: JNJ,
       title:"Johnson and Johnson",
+      urlProjectId:'johnson-and-johnson',
       description:"Johnson and Johnson Vision website",
       techStack:"NextJS + Tailwind CSS || ReactJS with TypeScript || GitHub Actions || Vitest + Puppeteer",
       feature1:" engineering B2B Customer Loyalty website to manage Johnson and Johnson Vision’s alliance of global GPOs. ",
@@ -33,6 +35,7 @@ export default function Home() {
     {
       src: CC92MB,
           title:"Coca Cola",
+          urlProjectId:'coca-cola',
           description:"ReactJS and React Native component libraries",
           techStack:"SreactJS with TypeScript ||} React Native with TypeScript || Storybook || Webpack + Babel || React Dev Tools + Xcode Instruments + Android Studio Profiler",
           bold1:" developing UI library of 100+ custom React Web and 50+ custom React Native high quality, resilient components; ",
@@ -41,6 +44,7 @@ export default function Home() {
     {
       src: NA,
       title:"New Alternatives",
+      urlProjectId:'new-alternatives',
       description:"Redesign of customer-facing website",
       techStack:"Stack: ReactJS with TypeScript || GitHub Actions || React Testing Library + Jest || JestAxe + LightHouse CI CLI + Pa11y CLI",
       feature1:" redesigning customer-facing website for LGBTQ+ Homeless Youth center in NYC using React and TypeScript.",
@@ -50,6 +54,7 @@ export default function Home() {
     {
       src: TABOOLA,
       title:"Taboola",
+      urlProjectId:'taboola',
       description:"Advertisemnet widgets for online news articles",
       techStack:"ReactJS with TypeScript || Selenium + Playwright",
       feature1:" working on Taboola’s recommendations ad formats and user experience; ",
@@ -79,6 +84,7 @@ export default function Home() {
             <>
              <Project
           src={project.src}
+          urlProjectId={project.urlProjectId}
           title={project.title}
           description={project.description}
           feature1={project.feature}
@@ -91,8 +97,6 @@ export default function Home() {
           )
         })
       }
-
-
       </div>
       </Layout>
     </>
