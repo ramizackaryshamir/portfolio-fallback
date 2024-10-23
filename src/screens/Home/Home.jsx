@@ -4,6 +4,7 @@ import Project from "../../components/Project/Project.jsx";
 import DFS from "../../assets/videos/dfs-mrp.mp4";
 import JNJ from "../../assets/videos/jnjvision.mp4";
 import CC92MB from "../../assets/videos/coca-cola_92mb.mp4";
+import MB from "../../assets/videos/merrick_mobile-application-demo_resized-for-portfolio-site.mp4";
 import NA from "../../assets/videos/new-alternatives.mp4";
 import TABOOLA from "../../assets/videos/taboola.mp4";
 
@@ -49,6 +50,18 @@ export default function Home() {
         " developing UI library of 100+ custom React Web and 50+ custom React Native high quality, resilient components; ",
       feature2:
         " working closely with backend developers to integrate UI components with server-side logic.",
+    },
+    {
+      src: MB,
+      title: "Merrick Bank",
+      urlProjectId: "merrick-bank",
+      description: "Merrick Bank mobile application",
+      techStack:
+        "React Native with TypeScript || Redux with Redux Saga || GitHub Actions || React Testing Library + Jest + Appium",
+      bold1: " development of mobile application features for iOS and Android,",
+      feature2:
+        " and strategic implementation of bash script to implement key strategies in automating the transition from a React based web app to a React Native mobile application,",
+      bold2: " saving 300+ hours of development time and cost",
     },
     {
       src: NA,
