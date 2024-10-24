@@ -1,15 +1,15 @@
 import React, { Suspense, lazy } from "react";
 import { motion } from "framer-motion";
 import useScreenOrientation from "../../hooks/useScreenOrientation.js";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 const Video = lazy(() => import("../Video/Video.jsx"));
 
 const Project = ({
   src,
   title,
-  urlProjectId,
+  // urlProjectId,
   description,
-  techStack,
+  // techStack,
   feature1,
   feature2,
   feature3,
