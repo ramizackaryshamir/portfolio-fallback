@@ -4,7 +4,7 @@ import Project from "../../components/Project/Project.jsx";
 import DFS from "../../assets/videos/dfs-mrp.mp4";
 import JNJ from "../../assets/videos/jnjvision.mp4";
 import CC92MB from "../../assets/videos/coca-cola_92mb.mp4";
-import MB from "../../assets/videos/merrick_mobile_demo-portfolio.mp4";
+import MB from "../../assets/videos/merrick-mobile-demo_portfolio.mp4";
 import NA from "../../assets/videos/new-alternatives.mp4";
 import TABOOLA from "../../assets/videos/taboola.mp4";
 
@@ -25,6 +25,8 @@ export default function Home() {
       feature3:
         "Test suite design with React Testing Library, Jest, and Appium, ",
       bold3: "expanding test coverage by 65%.",
+      backgroundColor: "#D79A36",
+      fontColor: "#25244C",
     },
     {
       src: JNJ,
@@ -38,6 +40,8 @@ export default function Home() {
       bold2: " Providing strategic consultation in all aspects of SDLC ",
       feature3:
         "for redesign of Johnson and Johnson Vision’s customer-facing site.",
+      backgroundColor: "rgb(105, 18, 29)",
+      fontColor: "#E8E9EF",
     },
     {
       src: CC92MB,
@@ -50,6 +54,8 @@ export default function Home() {
         " developing UI library of 100+ custom React Web and 50+ custom React Native high quality, resilient components; ",
       feature2:
         " working closely with backend developers to integrate UI components with server-side logic.",
+      backgroundColor: "#7D0C46",
+      fontColor: "#EBDBA8",
     },
     {
       src: MB,
@@ -62,6 +68,8 @@ export default function Home() {
       feature2:
         " and strategic implementation of bash script to automate the transition from a React based web app to a React Native mobile application,",
       bold2: " saving 300+ hours of development time and cost",
+      backgroundColor: "rgb(54, 188, 157)",
+      fontColor: "#447994",
     },
     {
       src: NA,
@@ -74,6 +82,8 @@ export default function Home() {
         " redesigning customer-facing website for LGBTQ+ Homeless Youth center in NYC using React and TypeScript.",
       bold2: " Establishing CI/CD pipeline for software development process ",
       feature3: "using GitHub Actions.",
+      backgroundColor: "#41659D",
+      fontColor: "#E5C922",
     },
     {
       src: TABOOLA,
@@ -89,6 +99,8 @@ export default function Home() {
       bold2: "to support clients in reaching conversion obejctives; ",
       feature3:
         "developing 'Recommended For You' and 'Around The World' below-the-fold advert widgets for online news articles.",
+      backgroundColor: "rgb(45, 104, 132)",
+      fontColor: "#27140A",
     },
   ];
 
@@ -120,6 +132,8 @@ export default function Home() {
                   bold2={project.bold2}
                   feature3={project.feature3}
                   bold3={project.bold3}
+                  backgroundColor={project.backgroundColor}
+                  fontColor={project.fontColor}
                 />
               </>
             );

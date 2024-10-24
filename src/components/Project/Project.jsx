@@ -1,11 +1,8 @@
-import React, {
-  Suspense,
-  lazy
-} from "react";
+import React, { Suspense, lazy } from "react";
 import { motion } from "framer-motion";
 import useScreenOrientation from "../../hooks/useScreenOrientation.js";
-import {Link} from 'react-router-dom'
-const Video = lazy( () => import( "../Video/Video.jsx" ) )
+import { Link } from "react-router-dom";
+const Video = lazy(() => import("../Video/Video.jsx"));
 
 const Project = ({
   src,
@@ -18,81 +15,83 @@ const Project = ({
   feature3,
   bold1,
   bold2,
-  bold3
+  bold3,
+  backgroundColor,
+  fontColor,
 }) => {
-
-  const orientation = useScreenOrientation()
+  const orientation = useScreenOrientation();
 
   return (
     <>
       <section
-        style={ window.screen.width < 1000 ? (
-          orientation === 'portrait-primary' ? {
-          display: 'flex',
-          flexDirection: 'column',
-          justifyContent: 'space-around',
-          alignItems: 'center',
-          height: '100vh',
-          maxHeight: '900px',
-          width: '100vw',
-          maxWidth: '900px',
-          paddingRight: '15px',
-          paddingLeft: '15px',
-          scrollSnapAlign: 'start',
-          backgroundColor: '#036A87',
-        } : {
-          display: 'flex',
-          flexDirection: 'row',
-          justifyContent: 'space-between',
-          alignItems: 'center',
-          height: '100vh',
-          width: '100vw',
-          paddingRight: '15px',
-          paddingLeft: '15px',
-          scrollSnapAlign: 'start',
-          backgroundColor: '#036A87',
+        style={
+          window.screen.width < 1000
+            ? orientation === "portrait-primary"
+              ? {
+                  display: "flex",
+                  flexDirection: "column",
+                  justifyContent: "space-around",
+                  alignItems: "center",
+                  height: "100vh",
+                  maxHeight: "900px",
+                  width: "100vw",
+                  maxWidth: "900px",
+                  paddingRight: "15px",
+                  paddingLeft: "15px",
+                  scrollSnapAlign: "start",
+                  backgroundColor: backgroundColor,
+                }
+              : {
+                  display: "flex",
+                  flexDirection: "row",
+                  justifyContent: "space-between",
+                  alignItems: "center",
+                  height: "100vh",
+                  width: "100vw",
+                  paddingRight: "15px",
+                  paddingLeft: "15px",
+                  scrollSnapAlign: "start",
+                  backgroundColor: backgroundColor,
+                }
+            : {
+                display: "flex",
+                flexDirection: "row",
+                justifyContent: "space-around",
+                alignItems: "center",
+                height: "100vh",
+                width: "100vw",
+                scrollSnapAlign: "start",
+                backgroundColor: backgroundColor,
+              }
         }
-       ) : (
-        {
-        display: 'flex',
-        flexDirection: 'row',
-        justifyContent: 'space-around',
-        alignItems: 'center',
-        height: '100vh',
-        width: '100vw',
-        scrollSnapAlign: 'start',
-        backgroundColor: '#036A87',
-        }
-       )
-      }
       >
         <section
-          style={ {
-            position: 'relative',
-            top: '40px'
+          style={{
+            position: "relative",
+            top: "40px",
           }}
-      >
+        >
           <h1
-          style={ {
-            paddingBottom: '5px',
-            fontFamily: 'Copperplate',
-            fontSize: '20px',
-            color: '#ffffff'
-        }}
+            style={{
+              paddingBottom: "5px",
+              fontFamily: "Copperplate",
+              fontSize: "20px",
+              color: "#ffffff",
+            }}
           >
-            { title }
+            {title}
           </h1>
-            <p
-               style={ {
-                paddingBottom: '25px',
-                fontFamily: 'Copperplate',
-                fontSize: '15px',
-                color: '#ffffff'
-               }}
-            >
-              { description }
-            </p>
-            {/* <p
+          <p
+            style={{
+              paddingBottom: "25px",
+              fontFamily: "Copperplate",
+              fontSize: "15px",
+              color: "#ffffff",
+            }}
+          >
+            {description}
+          </p>
+          {/* <p
               style={ {
               paddingBottom: '10px',
               fontVariant: 'small-caps',
@@ -107,45 +106,60 @@ const Project = ({
             </p> */}
 
           <p
-            style={ orientation === 'portrait-primary' ? {
-              fontFamily: 'GillSans',
-              fontSize: '17px',
-              lineHeight: 1.5,
-              textAlign: 'justify',
-              textJustify: 'inter-word',
-              color: '#0B2329',
-              } : {
-              width: '390px',
-              paddingRight: '20px',
-              paddingBottom: '70px',
-              fontFamily: 'GillSans',
-              fontSize: '17px',
-              lineHeight: 1.5,
-              textAlign: 'justify',
-              textJustify: 'inter-word',
-              color: '#0B2329',
-            }}
-            >
+            style={
+              orientation === "portrait-primary"
+                ? {
+                    fontFamily: "GillSans",
+                    fontSize: "17px",
+                    lineHeight: 1.5,
+                    textAlign: "justify",
+                    textJustify: "inter-word",
+                    color: fontColor,
+                  }
+                : {
+                    width: "390px",
+                    paddingRight: "20px",
+                    paddingBottom: "70px",
+                    fontFamily: "GillSans",
+                    fontSize: "17px",
+                    lineHeight: 1.5,
+                    textAlign: "justify",
+                    textJustify: "inter-word",
+                    color: fontColor,
+                  }
+            }
+          >
             Project highlights include
-            { feature1 ? feature1 : null }
-             <span style={ {
-              fontWeight: 'bold',
-              fontSize: '14px',
-              color: '#ffffff'
-            }}>{ bold1 ? bold1 : null }</span>
-            { feature2 ? feature2 : null }
-              <span style={ {
-              fontWeight: 'bold',
-              fontSize: '14px',
-              color: '#ffffff'
-            }}>{ bold2 ? bold2 : null }</span>
-            { feature3 ? feature3 : null }
-            <span style={ {
-              fontWeight: 'bold',
-              fontSize: '14px',
-              color: '#ffffff'
-            }}>{ bold3 ? bold3 : null }</span>
-
+            {feature1 ? feature1 : null}
+            <span
+              style={{
+                fontWeight: "bold",
+                fontSize: "14px",
+                color: "#ffffff",
+              }}
+            >
+              {bold1 ? bold1 : null}
+            </span>
+            {feature2 ? feature2 : null}
+            <span
+              style={{
+                fontWeight: "bold",
+                fontSize: "14px",
+                color: "#ffffff",
+              }}
+            >
+              {bold2 ? bold2 : null}
+            </span>
+            {feature3 ? feature3 : null}
+            <span
+              style={{
+                fontWeight: "bold",
+                fontSize: "14px",
+                color: "#ffffff",
+              }}
+            >
+              {bold3 ? bold3 : null}
+            </span>
           </p>
         </section>
         <motion.div
@@ -156,9 +170,7 @@ const Project = ({
           }}
         >
           <Suspense fallback={null}>
-            <Video
-              src={ src }
-            />
+            <Video src={src} />
           </Suspense>
         </motion.div>
       </section>
