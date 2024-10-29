@@ -1,8 +1,8 @@
 import React, { Suspense, lazy } from "react";
 import { motion } from "framer-motion";
-import useScreenOrientation from "../../hooks/useScreenOrientation.js";
+import useScreenOrientation from "../hooks/useScreenOrientation.js";
 // import { Link } from "react-router-dom";
-const Video = lazy(() => import("../Video/Video.jsx"));
+const Video = lazy(() => import("./Video.jsx"));
 
 const Project = ({
   src,
