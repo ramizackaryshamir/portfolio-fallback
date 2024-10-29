@@ -21,7 +21,7 @@ const Project = ({
   pp_lessThan1000_width,
   pp_lessThan1000_maxWidth,
   pp_lessThan1000_maxHeight,
-  notPP_essThan100_width,
+  notPP_lessThan100_width,
   notPP_lessThan100_maxWidth,
   notPP_lessThan100_maxHeight,
   greaterThan1000_width,
@@ -184,7 +184,7 @@ const Project = ({
               pp_lessThan1000_width={pp_lessThan1000_width}
               pp_lessThan1000_maxWidth={pp_lessThan1000_maxWidth}
               pp_lessThan1000_maxHeight={pp_lessThan1000_maxHeight}
-              notPP_essThan100_width={notPP_essThan100_width}
+              notPP_lessThan100_width={notPP_lessThan100_width}
               notPP_lessThan100_maxWidth={notPP_lessThan100_maxWidth}
               notPP_lessThan100_maxHeight={notPP_lessThan100_maxHeight}
               greaterThan1000_width={greaterThan1000_width}

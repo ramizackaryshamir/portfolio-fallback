@@ -5,7 +5,7 @@ const Video = ({
   pp_lessThan1000_width,
   pp_lessThan1000_maxWidth,
   pp_lessThan1000_maxHeight,
-  notPP_essThan100_width,
+  notPP_lessThan100_width,
   notPP_lessThan100_maxWidth,
   notPP_lessThan100_maxHeight,
   greaterThan1000_width,
@@ -29,7 +29,7 @@ const Video = ({
               }
             : //if orientation is not "portrait-primary" (i.e. "landscape") set as folllows
               {
-                width: notPP_essThan100_width,
+                width: notPP_lessThan100_width,
                 maxWidth: notPP_lessThan100_maxWidth,
                 maxHeight: notPP_lessThan100_maxHeight,
               }

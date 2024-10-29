@@ -30,7 +30,7 @@ export default function Home() {
       pp_lessThan1000_width: "100vw",
       pp_lessThan1000_maxWidth: "900px",
       pp_lessThan1000_maxHeight: "430px",
-      notPP_essThan100_width: "100vw",
+      notPP_lessThan100_width: "100vw",
       notPP_lessThan100_maxWidth: "300px",
       notPP_lessThan100_maxHeight: "400px",
       greaterThan1000_width: "50vw",
@@ -54,7 +54,7 @@ export default function Home() {
       pp_lessThan1000_width: "100vw",
       pp_lessThan1000_maxWidth: "900px",
       pp_lessThan1000_maxHeight: "430px",
-      notPP_essThan100_width: "100vw",
+      notPP_lessThan100_width: "100vw",
       notPP_lessThan100_maxWidth: "300px",
       notPP_lessThan100_maxHeight: "400px",
       greaterThan1000_width: "50vw",
@@ -77,7 +77,7 @@ export default function Home() {
       pp_lessThan1000_width: "100vw",
       pp_lessThan1000_maxWidth: "900px",
       pp_lessThan1000_maxHeight: "430px",
-      notPP_essThan100_width: "100vw",
+      notPP_lessThan100_width: "100vw",
       notPP_lessThan100_maxWidth: "300px",
       notPP_lessThan100_maxHeight: "400px",
       greaterThan1000_width: "50vw",
@@ -100,9 +100,9 @@ export default function Home() {
       pp_lessThan1000_width: "100vw",
       pp_lessThan1000_maxWidth: "900px",
       pp_lessThan1000_maxHeight: "430px",
-      notPP_essThan100_width: "100vw",
+      notPP_lessThan100_width: "40vw",
       notPP_lessThan100_maxWidth: "300px",
-      notPP_lessThan100_maxHeight: "400px",
+      notPP_lessThan100_maxHeight: "270px",
       greaterThan1000_width: "30vw",
       greaterThan1000_minWidth: "500px",
       greaterThan1000_maxHeight: "600px",
@@ -123,7 +123,7 @@ export default function Home() {
       pp_lessThan1000_width: "100vw",
       pp_lessThan1000_maxWidth: "900px",
       pp_lessThan1000_maxHeight: "430px",
-      notPP_essThan100_width: "100vw",
+      notPP_lessThan100_width: "100vw",
       notPP_lessThan100_maxWidth: "300px",
       notPP_lessThan100_maxHeight: "400px",
       greaterThan1000_width: "50vw",
@@ -149,7 +149,7 @@ export default function Home() {
       pp_lessThan1000_width: "100vw",
       pp_lessThan1000_maxWidth: "900px",
       pp_lessThan1000_maxHeight: "430px",
-      notPP_essThan100_width: "100vw",
+      notPP_lessThan100_width: "100vw",
       notPP_lessThan100_maxWidth: "300px",
       notPP_lessThan100_maxHeight: "400px",
       greaterThan1000_width: "50vw",
@@ -191,7 +191,7 @@ export default function Home() {
                   pp_lessThan1000_width={project.pp_lessThan1000_width}
                   pp_lessThan1000_maxWidth={project.pp_lessThan1000_maxWidth}
                   pp_lessThan1000_maxHeight={project.pp_lessThan1000_maxHeight}
-                  notPP_essThan100_width={project.notPP_essThan100_width}
+                  notPP_lessThan100_width={project.notPP_lessThan100_width}
                   notPP_lessThan100_maxWidth={
                     project.notPP_lessThan100_maxWidth
                   }
