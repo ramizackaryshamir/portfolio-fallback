@@ -5,22 +5,28 @@ const Video = ({ src }) => {
   return (
     <video
       style={
+        //check if window screen width is less than 1000
+        //if true, further check the orientation
         window.screen.width < 1000
-          ? orientation === "portrait-primary"
-            ? {
-                width: "100vw",
-                maxWidth: "900px",
-                maxHeight: "430px",
+          ? //if orientation is "portrait=primary"
+            orientation === "portrait-primary"
+            ? //set as follows
+              {
+                width: "100vw", // pp-lessThan1000_width
+                maxWidth: "900px", // pp-lessThan1000_maxWidth
+                maxHeight: "430px", //pp-lessThan1000_maxHeight
               }
-            : {
-                width: "100vw",
-                maxWidth: "300px",
-                maxHeight: "400px",
+            : //if orientation is not "portrait-pprimary" (i.e. "landscape") set as folllows
+              {
+                width: "100vw", // notPP-lessThan100_width
+                maxWidth: "300px", // notPP-lessThan100_maxWidth
+                maxHeight: "400px", // notPP-lessThan100_maxHeight
               }
-          : {
-              width: "50vw",
-              minWidth: "500px",
-              minHeight: "600px",
+          : //if screen width is 1000 pixels or more set as follows
+            {
+              width: "50vw", // greaterThan1000_width
+              minWidth: "500px", // greaterThan1000_maxWidth
+              minHeight: "600px", //greaterThan1000_maxHeight
             }
       }
       autoPlay={true}
