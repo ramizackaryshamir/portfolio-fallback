@@ -1,6 +1,17 @@
 import useScreenOrientation from "../hooks/useScreenOrientation";
 
-const Video = ({ src }) => {
+const Video = ({
+  src,
+  pp_lessThan1000_width,
+  pp_lessThan1000_maxWidth,
+  pp_lessThan1000_maxHeight,
+  notPP_essThan100_width,
+  notPP_lessThan100_maxWidth,
+  notPP_lessThan100_maxHeight,
+  greaterThan1000_width,
+  greaterThan1000_minWidth,
+  greaterThan1000_maxHeight,
+}) => {
   const orientation = useScreenOrientation();
   return (
     <video
@@ -12,21 +23,21 @@ const Video = ({ src }) => {
             orientation === "portrait-primary"
             ? //set as follows
               {
-                width: "100vw", // pp-lessThan1000_width
-                maxWidth: "900px", // pp-lessThan1000_maxWidth
-                maxHeight: "430px", //pp-lessThan1000_maxHeight
+                width: pp_lessThan1000_width,
+                maxWidth: pp_lessThan1000_maxWidth,
+                maxHeight: pp_lessThan1000_maxHeight,
               }
-            : //if orientation is not "portrait-pprimary" (i.e. "landscape") set as folllows
+            : //if orientation is not "portrait-primary" (i.e. "landscape") set as folllows
               {
-                width: "100vw", // notPP-lessThan100_width
-                maxWidth: "300px", // notPP-lessThan100_maxWidth
-                maxHeight: "400px", // notPP-lessThan100_maxHeight
+                width: notPP_essThan100_width,
+                maxWidth: notPP_lessThan100_maxWidth,
+                maxHeight: notPP_lessThan100_maxHeight,
               }
           : //if screen width is 1000 pixels or more set as follows
             {
-              width: "50vw", // greaterThan1000_width
-              minWidth: "500px", // greaterThan1000_maxWidth
-              minHeight: "600px", //greaterThan1000_maxHeight
+              width: greaterThan1000_width,
+              minWidth: greaterThan1000_minWidth,
+              minHeight: greaterThan1000_maxHeight,
             }
       }
       autoPlay={true}

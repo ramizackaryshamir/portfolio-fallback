@@ -27,6 +27,15 @@ export default function Home() {
       bold3: "expanding test coverage by 65%.",
       backgroundColor: "#D79A36",
       fontColor: "#25244C",
+      pp_lessThan1000_width: "100vw",
+      pp_lessThan1000_maxWidth: "900px",
+      pp_lessThan1000_maxHeight: "430px",
+      notPP_essThan100_width: "100vw",
+      notPP_lessThan100_maxWidth: "300px",
+      notPP_lessThan100_maxHeight: "400px",
+      greaterThan1000_width: "50vw",
+      greaterThan1000_minWidth: "500px",
+      greaterThan1000_maxHeight: "600px",
     },
     {
       src: JNJ,
@@ -42,6 +51,15 @@ export default function Home() {
         "for redesign of Johnson and Johnson Vision’s customer-facing site.",
       backgroundColor: "rgb(105, 18, 29)",
       fontColor: "#E8E9EF",
+      pp_lessThan1000_width: "100vw",
+      pp_lessThan1000_maxWidth: "900px",
+      pp_lessThan1000_maxHeight: "430px",
+      notPP_essThan100_width: "100vw",
+      notPP_lessThan100_maxWidth: "300px",
+      notPP_lessThan100_maxHeight: "400px",
+      greaterThan1000_width: "50vw",
+      greaterThan1000_minWidth: "500px",
+      greaterThan1000_maxHeight: "600px",
     },
     {
       src: CC92MB,
@@ -56,6 +74,15 @@ export default function Home() {
         " working closely with backend developers to integrate UI components with server-side logic.",
       backgroundColor: "#7D0C46",
       fontColor: "#EBDBA8",
+      pp_lessThan1000_width: "100vw",
+      pp_lessThan1000_maxWidth: "900px",
+      pp_lessThan1000_maxHeight: "430px",
+      notPP_essThan100_width: "100vw",
+      notPP_lessThan100_maxWidth: "300px",
+      notPP_lessThan100_maxHeight: "400px",
+      greaterThan1000_width: "50vw",
+      greaterThan1000_minWidth: "500px",
+      greaterThan1000_maxHeight: "600px",
     },
     {
       src: MB,
@@ -70,6 +97,15 @@ export default function Home() {
       bold2: " saving 300+ hours of development time and cost",
       backgroundColor: "rgb(54, 188, 157)",
       fontColor: "#447994",
+      pp_lessThan1000_width: "100vw",
+      pp_lessThan1000_maxWidth: "900px",
+      pp_lessThan1000_maxHeight: "430px",
+      notPP_essThan100_width: "100vw",
+      notPP_lessThan100_maxWidth: "300px",
+      notPP_lessThan100_maxHeight: "400px",
+      greaterThan1000_width: "30vw",
+      greaterThan1000_minWidth: "500px",
+      greaterThan1000_maxHeight: "600px",
     },
     {
       src: NA,
@@ -84,6 +120,15 @@ export default function Home() {
       feature3: "using GitHub Actions.",
       backgroundColor: "#41659D",
       fontColor: "#E5C922",
+      pp_lessThan1000_width: "100vw",
+      pp_lessThan1000_maxWidth: "900px",
+      pp_lessThan1000_maxHeight: "430px",
+      notPP_essThan100_width: "100vw",
+      notPP_lessThan100_maxWidth: "300px",
+      notPP_lessThan100_maxHeight: "400px",
+      greaterThan1000_width: "50vw",
+      greaterThan1000_minWidth: "500px",
+      greaterThan1000_maxHeight: "600px",
     },
     {
       src: TABOOLA,
@@ -101,6 +146,15 @@ export default function Home() {
         "developing 'Recommended For You' and 'Around The World' below-the-fold advert widgets for online news articles.",
       backgroundColor: "rgb(45, 104, 132)",
       fontColor: "#27140A",
+      pp_lessThan1000_width: "100vw",
+      pp_lessThan1000_maxWidth: "900px",
+      pp_lessThan1000_maxHeight: "430px",
+      notPP_essThan100_width: "100vw",
+      notPP_lessThan100_maxWidth: "300px",
+      notPP_lessThan100_maxHeight: "400px",
+      greaterThan1000_width: "50vw",
+      greaterThan1000_minWidth: "500px",
+      greaterThan1000_maxHeight: "600px",
     },
   ];
 
@@ -134,6 +188,19 @@ export default function Home() {
                   bold3={project.bold3}
                   backgroundColor={project.backgroundColor}
                   fontColor={project.fontColor}
+                  pp_lessThan1000_width={project.pp_lessThan1000_width}
+                  pp_lessThan1000_maxWidth={project.pp_lessThan1000_maxWidth}
+                  pp_lessThan1000_maxHeight={project.pp_lessThan1000_maxHeight}
+                  notPP_essThan100_width={project.notPP_essThan100_width}
+                  notPP_lessThan100_maxWidth={
+                    project.notPP_lessThan100_maxWidth
+                  }
+                  notPP_lessThan100_maxHeight={
+                    project.notPP_lessThan100_maxHeight
+                  }
+                  greaterThan1000_width={project.greaterThan1000_width}
+                  greaterThan1000_minWidth={project.greaterThan1000_minWidth}
+                  ggreaterThan1000_maxHeight={project.greaterThan1000_maxHeight}
                 />
               </>
             );

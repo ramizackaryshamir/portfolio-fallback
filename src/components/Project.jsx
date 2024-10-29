@@ -18,6 +18,15 @@ const Project = ({
   bold3,
   backgroundColor,
   fontColor,
+  pp_lessThan1000_width,
+  pp_lessThan1000_maxWidth,
+  pp_lessThan1000_maxHeight,
+  notPP_essThan100_width,
+  notPP_lessThan100_maxWidth,
+  notPP_lessThan100_maxHeight,
+  greaterThan1000_width,
+  greaterThan1000_minWidth,
+  greaterThan1000_maxHeight,
 }) => {
   const orientation = useScreenOrientation();
 
@@ -170,7 +179,18 @@ const Project = ({
           }}
         >
           <Suspense fallback={null}>
-            <Video src={src} />
+            <Video
+              src={src}
+              pp_lessThan1000_width={pp_lessThan1000_width}
+              pp_lessThan1000_maxWidth={pp_lessThan1000_maxWidth}
+              pp_lessThan1000_maxHeight={pp_lessThan1000_maxHeight}
+              notPP_essThan100_width={notPP_essThan100_width}
+              notPP_lessThan100_maxWidth={notPP_lessThan100_maxWidth}
+              notPP_lessThan100_maxHeight={notPP_lessThan100_maxHeight}
+              greaterThan1000_width={greaterThan1000_width}
+              greaterThan1000_minWidth={greaterThan1000_minWidth}
+              ggreaterThan1000_maxHeight={greaterThan1000_maxHeight}
+            />
           </Suspense>
         </motion.div>
       </section>
